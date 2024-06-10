@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { DataContext } from "../../Context/DataContext";
 import { useParams, useNavigate } from "react-router-dom";
 import Loader from "../../animation/Loader";
+import logoBlack from "./../../Images/logo.svg";
 import FetchDetailsModule from "../../components/module/FetchDetailsModule";
 import { Link } from "react-router-dom";
 import FetchModule from "../../components/module/FetchModule";
@@ -130,7 +131,7 @@ const BlogSingle = () => {
                             <div className="pbmit-ads-logo-white">
                               <img
                                 className="size-full"
-                                src="https://optionflow.pro/images/internet/logo.svg"
+                                src={logoBlack}
                                 alt="single15img"
                               />
                             </div>

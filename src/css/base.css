@@ -17,10 +17,19 @@ INDEX:
 /* 00 - General 
 /*----------------------------------------*/
 
-@import url("https://fonts.googleapis.com/css2?family=Geologica&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Geologica&display=swap"); */
+
+@font-face {
+  font-family: "Geologica";
+  src: url("https://fonts.gstatic.com/s/geologica/v1/abcdef.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 html {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Geologica", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -28,7 +37,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Geologica", sans-serif;
 }
 body {
   margin: 0;
