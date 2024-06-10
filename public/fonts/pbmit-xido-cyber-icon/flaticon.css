@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "flaticon_cyber";
+    src: url("flaticon_cyber.ttf?3fe95126071b415f9380912b11b7c8a7") format("truetype"), 
+    url("flaticon_cyber.woff?3fe95126071b415f9380912b11b7c8a7") format("woff"), 
+    url("flaticon_cyber.woff2?3fe95126071b415f9380912b11b7c8a7") format("woff2"), 
+    url("flaticon.eot?3fe95126071b415f9380912b11b7c8a7#iefix") format("embedded-opentype"), 
+    url("flaticon.svg?3fe95126071b415f9380912b11b7c8a7#flaticon") format("svg");
+}
+
+i[class^="flaticon_cyber-"]:before,
+i[class*=" pbmit-xido-cyber-icon-"]:before {
+    font-family: flaticon_cyber !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.pbmit-xido-cyber-icon-hacker:before {
+    content: "\f101";
+}
+
+.pbmit-xido-cyber-icon-shield:before {
+    content: "\f102";
+}
+
+.pbmit-xido-cyber-icon-antivirus:before {
+    content: "\f103";
+}
+
+.pbmit-xido-cyber-icon-cloud:before {
+    content: "\f104";
+}
+
+.pbmit-xido-cyber-icon-lock:before {
+    content: "\f105";
+}
+
+.pbmit-xido-cyber-icon-safe:before {
+    content: "\f106";
+}
+
+.pbmit-xido-cyber-icon-laptop:before {
+    content: "\f107";
+}
+
+.pbmit-xido-cyber-icon-shield-1:before {
+    content: "\f108";
+}
+
+.pbmit-xido-cyber-icon-laptop-1:before {
+    content: "\f109";
+}
+
+.pbmit-xido-cyber-icon-global:before {
+    content: "\f10a";
+}
+
+.pbmit-xido-cyber-icon-smartphone:before {
+    content: "\f10b";
+}
+
+.pbmit-xido-cyber-icon-cloud-1:before {
+    content: "\f10c";
+}
+
+.pbmit-xido-cyber-icon-hacker-1:before {
+    content: "\f10d";
+}
+
+.pbmit-xido-cyber-icon-shield-2:before {
+    content: "\f10e";
+}
+
+.pbmit-xido-cyber-icon-lock-1:before {
+    content: "\f10f";
+}

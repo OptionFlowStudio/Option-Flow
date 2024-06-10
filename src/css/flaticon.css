@@ -1,0 +1,791 @@
+/*
+  	flaticon icon font: flaticon
+  	Creation date: 30/11/2020 05:59
+  	*/
+
+@font-face {
+  font-family: "flaticon";
+  src: url("../fonts/flaticon.eot");
+  src: url("../fonts/flaticon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/flaticon.woff2") format("woff2"),
+    url("../fonts/flaticon.woff") format("woff"),
+    url("../fonts/flaticon.ttf") format("truetype"),
+    url("../fonts/flaticon.svg#flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.svg#flaticon") format("svg");
+  }
+}
+
+[class^="pbmit-xido-icon-"]:before,
+[class*=" pbmit-xido-icon-"]:before,
+[class^="pbmit-xido-icon-"]:after,
+[class*=" pbmit-xido-icon-"]:after {
+  font-family: flaticon;
+  font-style: normal;
+}
+
+i[class^="flaticon-"]:before,
+i[class*="pbmit-xido-icon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pbmit-xido-icon-financial-consultant:before {
+  content: "\f101";
+}
+
+.pbmit-xido-icon-light-bulb:before {
+  content: "\f102";
+}
+
+.pbmit-xido-icon-reporting:before {
+  content: "\f103";
+}
+
+.pbmit-xido-icon-book:before {
+  content: "\f104";
+}
+
+.pbmit-xido-icon-hourglass:before {
+  content: "\f105";
+}
+
+.pbmit-xido-icon-briefcase:before {
+  content: "\f106";
+}
+
+.pbmit-xido-icon-paperwork:before {
+  content: "\f107";
+}
+
+.pbmit-xido-icon-currency:before {
+  content: "\f108";
+}
+
+.pbmit-xido-icon-settings:before {
+  content: "\f109";
+}
+
+.pbmit-xido-icon-conference:before {
+  content: "\f10a";
+}
+
+.pbmit-xido-icon-problem-solving:before {
+  content: "\f10b";
+}
+
+.pbmit-xido-icon-speaker:before {
+  content: "\f10c";
+}
+
+.pbmit-xido-icon-profit:before {
+  content: "\f10d";
+}
+
+.pbmit-xido-icon-information-management:before {
+  content: "\f10e";
+}
+
+.pbmit-xido-icon-application:before {
+  content: "\f10f";
+}
+
+.pbmit-xido-icon-webinar:before {
+  content: "\f110";
+}
+
+.pbmit-xido-icon-interview:before {
+  content: "\f111";
+}
+
+.pbmit-xido-icon-conference-1:before {
+  content: "\f112";
+}
+
+.pbmit-xido-icon-team:before {
+  content: "\f113";
+}
+
+.pbmit-xido-icon-bussiness-man:before {
+  content: "\f114";
+}
+
+.pbmit-xido-icon-mountain:before {
+  content: "\f115";
+}
+
+.pbmit-xido-icon-user:before {
+  content: "\f116";
+}
+
+.pbmit-xido-icon-network:before {
+  content: "\f117";
+}
+
+.pbmit-xido-icon-group:before {
+  content: "\f118";
+}
+
+.pbmit-xido-icon-application-1:before {
+  content: "\f119";
+}
+
+.pbmit-xido-icon-strategic:before {
+  content: "\f11a";
+}
+
+.pbmit-xido-icon-tools:before {
+  content: "\f11b";
+}
+
+.pbmit-xido-icon-event:before {
+  content: "\f11c";
+}
+
+.pbmit-xido-icon-chart:before {
+  content: "\f11d";
+}
+
+.pbmit-xido-icon-clock:before {
+  content: "\f11e";
+}
+
+.pbmit-xido-icon-team-1:before {
+  content: "\f11f";
+}
+
+.pbmit-xido-icon-man:before {
+  content: "\f120";
+}
+
+.pbmit-xido-icon-person:before {
+  content: "\f121";
+}
+
+.pbmit-xido-icon-donation:before {
+  content: "\f122";
+}
+
+.pbmit-xido-icon-cash:before {
+  content: "\f123";
+}
+
+.pbmit-xido-icon-money-growth:before {
+  content: "\f124";
+}
+
+.pbmit-xido-icon-worldwide:before {
+  content: "\f125";
+}
+
+.pbmit-xido-icon-allocation:before {
+  content: "\f126";
+}
+
+.pbmit-xido-icon-funds:before {
+  content: "\f127";
+}
+
+.pbmit-xido-icon-atm-machine:before {
+  content: "\f128";
+}
+
+.pbmit-xido-icon-money:before {
+  content: "\f129";
+}
+
+.pbmit-xido-icon-saving-money:before {
+  content: "\f12a";
+}
+
+.pbmit-xido-icon-profit-growth:before {
+  content: "\f12b";
+}
+
+.pbmit-xido-icon-piggy-bank:before {
+  content: "\f12c";
+}
+
+.pbmit-xido-icon-investment:before {
+  content: "\f12d";
+}
+
+.pbmit-xido-icon-bank:before {
+  content: "\f12e";
+}
+
+.pbmit-xido-icon-trophy:before {
+  content: "\f12f";
+}
+
+.pbmit-xido-icon-hand:before {
+  content: "\f130";
+}
+
+.pbmit-xido-icon-light-bulb-1:before {
+  content: "\f131";
+}
+
+.pbmit-xido-icon-horse:before {
+  content: "\f132";
+}
+
+.pbmit-xido-icon-rating:before {
+  content: "\f133";
+}
+
+.pbmit-xido-icon-paper:before {
+  content: "\f134";
+}
+
+.pbmit-xido-icon-bar-chart:before {
+  content: "\f135";
+}
+
+.pbmit-xido-icon-business-trip:before {
+  content: "\f136";
+}
+
+.pbmit-xido-icon-setting:before {
+  content: "\f137";
+}
+
+.pbmit-xido-icon-content-creator:before {
+  content: "\f138";
+}
+
+.pbmit-xido-icon-social-media-marketing:before {
+  content: "\f139";
+}
+
+.pbmit-xido-icon-public-relation:before {
+  content: "\f13a";
+}
+
+.pbmit-xido-icon-email-marketing:before {
+  content: "\f13b";
+}
+
+.pbmit-xido-icon-statistics:before {
+  content: "\f13c";
+}
+
+.pbmit-xido-icon-ppc:before {
+  content: "\f13d";
+}
+
+.pbmit-xido-icon-growth:before {
+  content: "\f13e";
+}
+
+.pbmit-xido-icon-blog:before {
+  content: "\f13f";
+}
+
+.pbmit-xido-icon-online-marketing:before {
+  content: "\f140";
+}
+
+.pbmit-xido-icon-seo:before {
+  content: "\f141";
+}
+
+.pbmit-xido-icon-paid-articles:before {
+  content: "\f142";
+}
+
+.pbmit-xido-icon-video-marketing:before {
+  content: "\f143";
+}
+
+.pbmit-xido-icon-search:before {
+  content: "\f144";
+}
+
+.pbmit-xido-icon-online-marketing-1:before {
+  content: "\f145";
+}
+
+.pbmit-xido-icon-customer-behavior:before {
+  content: "\f146";
+}
+
+.pbmit-xido-icon-globe:before {
+  content: "\f147";
+}
+
+.pbmit-xido-icon-online-shopping:before {
+  content: "\f148";
+}
+
+.pbmit-xido-icon-affiliate-marketing:before {
+  content: "\f149";
+}
+
+.pbmit-xido-icon-global-marketing:before {
+  content: "\f14a";
+}
+
+.pbmit-xido-icon-chat:before {
+  content: "\f14b";
+}
+
+.pbmit-xido-icon-content-management:before {
+  content: "\f14c";
+}
+
+.pbmit-xido-icon-marketing:before {
+  content: "\f14d";
+}
+
+.pbmit-xido-icon-returning-visitor:before {
+  content: "\f14e";
+}
+
+.pbmit-xido-icon-impression-rate:before {
+  content: "\f14f";
+}
+
+.pbmit-xido-icon-copywriting:before {
+  content: "\f150";
+}
+
+.pbmit-xido-icon-seo-1:before {
+  content: "\f151";
+}
+
+.pbmit-xido-icon-video-marketing-1:before {
+  content: "\f152";
+}
+
+.pbmit-xido-icon-smartphone:before {
+  content: "\f153";
+}
+
+.pbmit-xido-icon-report:before {
+  content: "\f154";
+}
+
+.pbmit-xido-icon-pencil:before {
+  content: "\f155";
+}
+
+.pbmit-xido-icon-idea:before {
+  content: "\f156";
+}
+
+.pbmit-xido-icon-pencil-1:before {
+  content: "\f157";
+}
+
+.pbmit-xido-icon-compass:before {
+  content: "\f158";
+}
+
+.pbmit-xido-icon-idea-1:before {
+  content: "\f159";
+}
+
+.pbmit-xido-icon-fountain-pen:before {
+  content: "\f15a";
+}
+
+.pbmit-xido-icon-networking:before {
+  content: "\f15b";
+}
+
+.pbmit-xido-icon-idea-2:before {
+  content: "\f15c";
+}
+
+.pbmit-xido-icon-laptop:before {
+  content: "\f15d";
+}
+
+.pbmit-xido-icon-design:before {
+  content: "\f15e";
+}
+
+.pbmit-xido-icon-backup-copy:before {
+  content: "\f15f";
+}
+
+.pbmit-xido-icon-incognito:before {
+  content: "\f160";
+}
+
+.pbmit-xido-icon-shield:before {
+  content: "\f161";
+}
+
+.pbmit-xido-icon-shield-1:before {
+  content: "\f162";
+}
+
+.pbmit-xido-icon-encryption:before {
+  content: "\f163";
+}
+
+.pbmit-xido-icon-cloud-computing:before {
+  content: "\f165";
+}
+
+.pbmit-xido-icon-computer:before {
+  content: "\f165";
+}
+
+.pbmit-xido-icon-cloud-data:before {
+  content: "\f166";
+}
+
+.pbmit-xido-icon-antenna:before {
+  content: "\f167";
+}
+
+.pbmit-xido-icon-video-call:before {
+  content: "\f168";
+}
+
+.pbmit-xido-icon-error-404:before {
+  content: "\f169";
+}
+
+.pbmit-xido-icon-cable:before {
+  content: "\f16a";
+}
+
+.pbmit-xido-icon-cyber-security:before {
+  content: "\f16b";
+}
+
+.pbmit-xido-icon-internet:before {
+  content: "\f16c";
+}
+
+.pbmit-xido-icon-5g:before {
+  content: "\f16d";
+}
+
+.pbmit-xido-icon-satellite:before {
+  content: "\f14c";
+}
+
+.pbmit-xido-icon-local-area-network:before {
+  content: "\f16f";
+}
+
+.pbmit-xido-icon-blog-1:before {
+  content: "\f170";
+}
+
+.pbmit-xido-icon-cloud-computing-1:before {
+  content: "\f171";
+}
+
+.pbmit-xido-icon-wifi-router:before {
+  content: "\f172";
+}
+
+.pbmit-xido-icon-wifi:before {
+  content: "\f173";
+}
+
+.pbmit-xido-icon-database:before {
+  content: "\f174";
+}
+
+.pbmit-xido-icon-global-communication:before {
+  content: "\f175";
+}
+
+.pbmit-xido-icon-wireframe:before {
+  content: "\f176";
+}
+
+.pbmit-xido-icon-server:before {
+  content: "\f177";
+}
+
+.pbmit-xido-icon-ethernet:before {
+  content: "\f178";
+}
+
+.pbmit-xido-icon-ad-blocker:before {
+  content: "\f179";
+}
+
+.pbmit-xido-icon-file-sharing:before {
+  content: "\f17a";
+}
+
+.pbmit-xido-icon-speed:before {
+  content: "\f17b";
+}
+
+.pbmit-xido-icon-configuration:before {
+  content: "\f17c";
+}
+
+.pbmit-xido-icon-link:before {
+  content: "\f17d";
+}
+
+.pbmit-xido-icon-cloud-computing-2:before {
+  content: "\f17e";
+}
+
+.pbmit-xido-icon-analytics:before {
+  content: "\f17f";
+}
+
+.pbmit-xido-icon-settings-1:before {
+  content: "\f180";
+}
+
+.pbmit-xido-icon-website:before {
+  content: "\f181";
+}
+
+.pbmit-xido-icon-analytics-1:before {
+  content: "\f182";
+}
+
+.pbmit-xido-icon-search-1:before {
+  content: "\f183";
+}
+
+.pbmit-xido-icon-bookmark:before {
+  content: "\f184";
+}
+
+.pbmit-xido-icon-planning:before {
+  content: "\f185";
+}
+
+.pbmit-xido-icon-coding:before {
+  content: "\f186";
+}
+
+.pbmit-xido-icon-virus:before {
+  content: "\f187";
+}
+
+.pbmit-xido-icon-analysis:before {
+  content: "\f188";
+}
+
+.pbmit-xido-icon-seo-2:before {
+  content: "\f189";
+}
+
+.pbmit-xido-icon-seo-3:before {
+  content: "\f18a";
+}
+
+.pbmit-xido-icon-search-engine:before {
+  content: "\f18b";
+}
+
+.pbmit-xido-icon-megaphone:before {
+  content: "\f18c";
+}
+
+.pbmit-xido-icon-local-network:before {
+  content: "\f18d";
+}
+
+.pbmit-xido-icon-boost:before {
+  content: "\f18e";
+}
+
+.pbmit-xido-icon-seo-4:before {
+  content: "\f18f";
+}
+
+.pbmit-xido-icon-seo-5:before {
+  content: "\f190";
+}
+
+.pbmit-xido-icon-content-marketing:before {
+  content: "\f191";
+}
+
+.pbmit-xido-icon-speed-1:before {
+  content: "\f192";
+}
+
+.pbmit-xido-icon-seo-6:before {
+  content: "\f193";
+}
+
+.pbmit-xido-icon-check-list:before {
+  content: "\f194";
+}
+
+.pbmit-xido-icon-global-services:before {
+  content: "\f195";
+}
+
+.pbmit-xido-icon-handshake:before {
+  content: "\f196";
+}
+
+.pbmit-xido-icon-monitor-screen:before {
+  content: "\f197";
+}
+
+.pbmit-xido-icon-calendar:before {
+  content: "\f198";
+}
+
+.pbmit-xido-icon-call-center:before {
+  content: "\f199";
+}
+
+.pbmit-xido-icon-wrench:before {
+  content: "\f19a";
+}
+
+.pbmit-xido-icon-avatar:before {
+  content: "\f19b";
+}
+
+.pbmit-xido-icon-phone-call:before {
+  content: "\f19c";
+}
+
+.pbmit-xido-icon-avatar-1:before {
+  content: "\f19d";
+}
+
+.pbmit-xido-icon-phone-call-1:before {
+  content: "\f19e";
+}
+
+.pbmit-xido-icon-avatar-2:before {
+  content: "\f19f";
+}
+
+.pbmit-xido-icon-avatars:before {
+  content: "\f1a0";
+}
+
+.pbmit-xido-icon-avatar-3:before {
+  content: "\f1a1";
+}
+
+.pbmit-xido-icon-pdf:before {
+  content: "\f1a2";
+}
+
+.pbmit-xido-icon-doc:before {
+  content: "\f1a3";
+}
+
+.pbmit-xido-icon-location:before {
+  content: "\f1a4";
+}
+
+.pbmit-xido-icon-telephone:before {
+  content: "\f1a5";
+}
+
+.pbmit-xido-icon-call:before {
+  content: "\f1a6";
+}
+
+.pbmit-xido-icon-chat-1:before {
+  content: "\f1a7";
+}
+
+.pbmit-xido-icon-email:before {
+  content: "\f1a8";
+}
+
+.pbmit-xido-icon-telephone-1:before {
+  content: "\f1a9";
+}
+
+.pbmit-xido-icon-vr-glasses:before {
+  content: "\f1aa";
+}
+
+.pbmit-xido-icon-vr-glasses-1:before {
+  content: "\f1ab";
+}
+
+.pbmit-xido-icon-vr-glasses-2:before {
+  content: "\f1ac";
+}
+
+.pbmit-xido-icon-ar-camera:before {
+  content: "\f1ad";
+}
+
+.pbmit-xido-icon-facial-recognition:before {
+  content: "\f1ae";
+}
+
+.pbmit-xido-icon-augmented-reality:before {
+  content: "\f1af";
+}
+
+.pbmit-xido-icon-vr-glasses-3:before {
+  content: "\f1b0";
+}
+
+.pbmit-xido-icon-vr:before {
+  content: "\f1b1";
+}
+
+.pbmit-xido-icon-vr-1:before {
+  content: "\f1b2";
+}
+
+.pbmit-xido-icon-vr-control:before {
+  content: "\f1b3";
+}
+
+.pbmit-xido-icon-vr-2:before {
+  content: "\f1b4";
+}
+
+.pbmit-xido-icon-video:before {
+  content: "\f1b5";
+}
+
+.pbmit-xido-icon-vr-game:before {
+  content: "\f1b6";
+}
+
+.pbmit-xido-icon-camera:before {
+  content: "\f1b7";
+}
+
+.pbmit-xido-icon-view:before {
+  content: "\f1b8";
+}
+
+.pbmit-xido-icon-augmented-reality-1:before {
+  content: "\f1b9";
+}
+
+.pbmit-xido-icon-3d-cube:before {
+  content: "\f1ba";
+}
+
+.pbmit-xido-icon-gps:before {
+  content: "\f1bb";
+}

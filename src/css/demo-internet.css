@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Geologica&display=swap");
+:root {
+  --pbmit-global-color: #5f51e3;
+  --pbmit-secondary-color: #000031;
+  --pbmit-light-color: #000031;
+  --pbmit-white-color: #ffffff;
+  --pbmit-blackish-color: #061652;
+  --pbmit-blackish-text-color: #21293d;
+  --pbmit-link-color-normal: #ffffff;
+  --pbmit-link-color-hover: #5f51e3;
+  --pbmit-global-color-rgb: 254, 168, 43;
+  --pbmit-secondary-color-rgb: 31, 39, 58;
+  --pbmit-responsive-breakpoint: 1200px;
+  --pbmit-body-typography-font-family: "Geologica", sans-serif;
+  --pbmit-body-typography-variant: regular;
+  --pbmit-body-typography-font-size: 16px;
+  --pbmit-body-typography-line-height: 26px;
+  --pbmit-body-typography-color: #787c8b;
+  --pbmit-heading-typography-font-family: "Geologica", sans-serif;
+  --pbmit-heading-color: #21293d;
+  --pbmit-heading-font-variant: 700;
+  --pbmit-btn-typography-font-family: "Geologica", sans-serif;
+  --pbmit-btn-typography-variant: 700;
+  --pbmit-btn-typography-font-size: 13px;
+  --pbmit-btn-typography-line-height: 20px;
+  --pbmit-border-radius: 50px;
+}

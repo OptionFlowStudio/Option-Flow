@@ -1,0 +1,85 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("flaticon.ttf?962d2fd9f4d44ae54fe359759992bf02") format("truetype"),
+url("flaticon.woff?962d2fd9f4d44ae54fe359759992bf02") format("woff"),
+url("flaticon.woff2?962d2fd9f4d44ae54fe359759992bf02") format("woff2"),
+url("flaticon.eot?962d2fd9f4d44ae54fe359759992bf02#iefix") format("embedded-opentype"),
+url("flaticon.svg?962d2fd9f4d44ae54fe359759992bf02#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "cloud-server": "\f101",
+    "security": "\f102",
+    "cloud-computing": "\f103",
+    "website": "\f104",
+    "database-management": "\f105",
+    "database": "\f106",
+    "security-1": "\f107",
+    "web-hosting": "\f108",
+    "database-1": "\f109",
+    "internet": "\f10a",
+    "coding": "\f10b",
+    "structure": "\f10c",
+    "cloud-server-1": "\f10d",
+    "network": "\f10e",
+    "database-2": "\f10f",
+);
+
+.flaticon-cloud-server:before {
+    content: map-get($flaticon-map, "cloud-server");
+}
+.flaticon-security:before {
+    content: map-get($flaticon-map, "security");
+}
+.flaticon-cloud-computing:before {
+    content: map-get($flaticon-map, "cloud-computing");
+}
+.flaticon-website:before {
+    content: map-get($flaticon-map, "website");
+}
+.flaticon-database-management:before {
+    content: map-get($flaticon-map, "database-management");
+}
+.flaticon-database:before {
+    content: map-get($flaticon-map, "database");
+}
+.flaticon-security-1:before {
+    content: map-get($flaticon-map, "security-1");
+}
+.flaticon-web-hosting:before {
+    content: map-get($flaticon-map, "web-hosting");
+}
+.flaticon-database-1:before {
+    content: map-get($flaticon-map, "database-1");
+}
+.flaticon-internet:before {
+    content: map-get($flaticon-map, "internet");
+}
+.flaticon-coding:before {
+    content: map-get($flaticon-map, "coding");
+}
+.flaticon-structure:before {
+    content: map-get($flaticon-map, "structure");
+}
+.flaticon-cloud-server-1:before {
+    content: map-get($flaticon-map, "cloud-server-1");
+}
+.flaticon-network:before {
+    content: map-get($flaticon-map, "network");
+}
+.flaticon-database-2:before {
+    content: map-get($flaticon-map, "database-2");
+}
