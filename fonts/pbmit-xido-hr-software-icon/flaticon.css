@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "flaticon_hr_software";
+    src: url("flaticon_hr_software.ttf?000c331e19842befe852347211efc923") format("truetype"), 
+    url("flaticon_hr_software.woff?000c331e19842befe852347211efc923") format("woff"), 
+    url("flaticon_hr_software.woff2?000c331e19842befe852347211efc923") format("woff2"),
+     url("flaticon.eot?000c331e19842befe852347211efc923#iefix") format("embedded-opentype"), 
+     url("flaticon.svg?000c331e19842befe852347211efc923#flaticon") format("svg");
+}
+
+i[class^="flaticon_hr_software-"]:before,
+i[class*=" pbmit-xido-hr-software-icon-"]:before {
+    font-family: flaticon_hr_software !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.pbmit-xido-hr-software-icon-vacancy:before {
+    content: "\f101";
+}
+
+.pbmit-xido-hr-software-icon-outsource:before {
+    content: "\f102";
+}
+
+.pbmit-xido-hr-software-icon-job-search:before {
+    content: "\f103";
+}
+
+.pbmit-xido-hr-software-icon-search:before {
+    content: "\f104";
+}
+
+.pbmit-xido-hr-software-icon-low-cost:before {
+    content: "\f105";
+}
+
+.pbmit-xido-hr-software-icon-experience:before {
+    content: "\f106";
+}
+
+.pbmit-xido-hr-software-icon-workplace:before {
+    content: "\f107";
+}
+
+.pbmit-xido-hr-software-icon-candidate:before {
+    content: "\f108";
+}
+
+.pbmit-xido-hr-software-icon-authority:before {
+    content: "\f109";
+}
+
+.pbmit-xido-hr-software-icon-hiring:before {
+    content: "\f10a";
+}
+
+.pbmit-xido-hr-software-icon-appraisal:before {
+    content: "\f10b";
+}
+
+.pbmit-xido-hr-software-icon-analysis:before {
+    content: "\f10c";
+}
+
+.pbmit-xido-hr-software-icon-contract:before {
+    content: "\f10d";
+}
+
+.pbmit-xido-hr-software-icon-portfolio:before {
+    content: "\f10e";
+}
+
+.pbmit-xido-hr-software-icon-team-management:before {
+    content: "\f10f";
+}

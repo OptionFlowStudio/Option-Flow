@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "flaticon_hosting";
+    src: url("flaticon_hosting.ttf?962d2fd9f4d44ae54fe359759992bf02") format("truetype"), 
+    url("flaticon_hosting.woff?962d2fd9f4d44ae54fe359759992bf02") format("woff"), 
+    url("flaticon_hosting.woff2?962d2fd9f4d44ae54fe359759992bf02") format("woff2"),
+     url("flaticon.eot?962d2fd9f4d44ae54fe359759992bf02#iefix") format("embedded-opentype"), 
+     url("flaticon.svg?962d2fd9f4d44ae54fe359759992bf02#flaticon") format("svg");
+}
+
+i[class^="flaticon_hosting-"]:before,
+i[class*=" pbmit-xido-hosting-icon-"]:before {
+    font-family: flaticon_hosting !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.pbmit-xido-hosting-icon-cloud-server:before {
+    content: "\f101";
+}
+
+.pbmit-xido-hosting-icon-security:before {
+    content: "\f102";
+}
+
+.pbmit-xido-hosting-icon-cloud-computing:before {
+    content: "\f103";
+}
+
+.pbmit-xido-hosting-icon-website:before {
+    content: "\f104";
+}
+
+.pbmit-xido-hosting-icon-database-management:before {
+    content: "\f105";
+}
+
+.pbmit-xido-hosting-icon-database:before {
+    content: "\f106";
+}
+
+.pbmit-xido-hosting-icon-security-1:before {
+    content: "\f107";
+}
+
+.pbmit-xido-hosting-icon-web-hosting:before {
+    content: "\f108";
+}
+
+.pbmit-xido-hosting-icon-database-1:before {
+    content: "\f109";
+}
+
+.pbmit-xido-hosting-icon-internet:before {
+    content: "\f10a";
+}
+
+.pbmit-xido-hosting-icon-coding:before {
+    content: "\f10b";
+}
+
+.pbmit-xido-hosting-icon-structure:before {
+    content: "\f10c";
+}
+
+.pbmit-xido-hosting-icon-cloud-server-1:before {
+    content: "\f10d";
+}
+
+.pbmit-xido-hosting-icon-network:before {
+    content: "\f10e";
+}
+
+.pbmit-xido-hosting-icon-database-2:before {
+    content: "\f10f";
+}

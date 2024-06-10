@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/Option-Flow/static/css/main.13c1f7ac.css",
+    "main.js": "/Option-Flow/static/js/main.3723ecf3.js",
+    "static/media/flaticon.svg": "/Option-Flow/static/media/flaticon.8dbedf60258bbe4aa064.svg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/Option-Flow/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/it-service.png": "/Option-Flow/static/media/it-service.b68ce1eca29652408fd2.png",
+    "static/media/smm-service.png": "/Option-Flow/static/media/smm-service.e9bce92baf6a9df31d8c.png",
+    "static/media/web-service.png": "/Option-Flow/static/media/web-service.341b451eb214b3f18e12.png",
+    "static/media/map.png": "/Option-Flow/static/media/map.c2d5b86ae4442536793b.png",
+    "static/media/fontawesome-webfont.eot": "/Option-Flow/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/Option-Flow/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/history.jpg": "/Option-Flow/static/media/history.c4254596a64f58c36ef0.jpg",
+    "static/media/titlebarbg.jpg": "/Option-Flow/static/media/titlebarbg.ce2da5852dc2cc0c443d.jpg",
+    "static/media/flaticon.eot": "/Option-Flow/static/media/flaticon.056a850d5284703ea9b0.eot",
+    "static/media/flaticon.ttf": "/Option-Flow/static/media/flaticon.950064507c0a6911efac.ttf",
+    "static/media/about.jpg": "/Option-Flow/static/media/about.8a1e21e27371bd913884.jpg",
+    "static/media/pattern-bg-01.png": "/Option-Flow/static/media/pattern-bg-01.9405448c99980bedd2f4.png",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/Option-Flow/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/Option-Flow/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/pbminfotech-base-icons.svg?57815348": "/Option-Flow/static/media/pbminfotech-base-icons.db3e98b772139d3828e4.svg",
+    "static/media/flaticon.woff": "/Option-Flow/static/media/flaticon.ca7e969a6ee884ac5edf.woff",
+    "static/media/flaticon.woff2": "/Option-Flow/static/media/flaticon.4c77423ea305f424d399.woff2",
+    "static/media/pbminfotech-base-icons.eot?57815348": "/Option-Flow/static/media/pbminfotech-base-icons.da424953710126c841bf.eot",
+    "static/media/pbminfotech-base-icons.ttf?57815348": "/Option-Flow/static/media/pbminfotech-base-icons.f4ba7ad5d3f6adedca05.ttf",
+    "static/media/pbminfotech-base-icons.woff?57815348": "/Option-Flow/static/media/pbminfotech-base-icons.f28f2b82ee38ad807ef6.woff",
+    "static/media/pbminfotech-base-icons.woff2?57815348": "/Option-Flow/static/media/pbminfotech-base-icons.764a6fc552d47cb6250e.woff2",
+    "static/media/logo.svg": "/Option-Flow/static/media/logo.dffb1ce0ddbde9ac81f6d62a3055b837.svg",
+    "static/media/logo-white.svg": "/Option-Flow/static/media/logo-white.5d6b1149310c199db0de4bf9556b4ceb.svg",
+    "static/media/slick.svg": "/Option-Flow/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Option-Flow/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Option-Flow/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Option-Flow/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Option-Flow/index.html",
+    "main.13c1f7ac.css.map": "/Option-Flow/static/css/main.13c1f7ac.css.map",
+    "main.3723ecf3.js.map": "/Option-Flow/static/js/main.3723ecf3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13c1f7ac.css",
+    "static/js/main.3723ecf3.js"
+  ]
+}
