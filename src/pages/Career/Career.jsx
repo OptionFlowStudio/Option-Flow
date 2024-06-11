@@ -26,7 +26,7 @@ const Career = () => {
             <div className="pbmit-title-bar-content-inner">
               <div className="pbmit-tbar">
                 <div className="pbmit-tbar-inner container">
-                  <h1 className="pbmit-tbar-title">Карьера</h1>
+                  <h1 className="pbmit-tbar-title">Кар’єра</h1>
                 </div>
               </div>
             </div>

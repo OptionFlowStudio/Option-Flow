@@ -25,7 +25,7 @@ const Service = () => {
               <div className="pbmit-title-bar-content-inner">
                 <div className="pbmit-tbar">
                   <div className="pbmit-tbar-inner container">
-                    <h1 className="pbmit-tbar-title">Services</h1>
+                    <h1 className="pbmit-tbar-title">Послуги</h1>
                   </div>
                 </div>
               </div>

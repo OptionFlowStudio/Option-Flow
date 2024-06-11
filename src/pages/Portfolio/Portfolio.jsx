@@ -25,7 +25,7 @@ const Portfolio = () => {
             <div className="pbmit-title-bar-content-inner">
               <div className="pbmit-tbar">
                 <div className="pbmit-tbar-inner container">
-                  <h1 className="pbmit-tbar-title">Наше Порфтоліо</h1>
+                  <h1 className="pbmit-tbar-title">Наше Портфоліо</h1>
                 </div>
               </div>
             </div>

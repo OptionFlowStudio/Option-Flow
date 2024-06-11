@@ -19,7 +19,7 @@ function Sphere() {
 
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     window.innerHeight >= 1000
-      ? (camera.position.z = 3)
+      ? (camera.position.z = 3.6)
       : (camera.position.z = 2);
     cameraRef.current = camera;
 

@@ -536,6 +536,7 @@ body {
   z-index: -1;
   transition: all 500ms ease;
 }
+
 .pbmit-elementor-bg-color-globalcolor
   .pbmit-service-style-3
   .pbminfotech-post-item::after,
@@ -554,6 +555,16 @@ body {
 }
 .pbmit-service-style-3:hover .pbminfotech-post-item::before {
   transform: scaleX(1);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .pbmit-service-style-3:hover .pbminfotech-post-item::before {
+    transform: 0;
+  }
+  .pbmit-service-style-3:hover .pbminfotech-post-item::after,
+  .pbmit-service-style-3:hover .pbminfotech-post-item::before {
+    width: 0px;
+  }
 }
 .pbmit-service-style-3 .pbmit-service-title {
   font-size: 24px;
