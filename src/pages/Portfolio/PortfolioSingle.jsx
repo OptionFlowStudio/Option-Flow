@@ -123,20 +123,28 @@ const PortfolioSingle = () => {
                             </li>
                           </ul>
                         </div>
-
-                        <a
-                          href={currentPortfolio.projectLink}
-                          className="col-md-6"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <div className="portfolio-challange-bg">
-                            <img
-                              src={`https://api.optionflow.pro/${currentPortfolio.portfolioImage}`}
-                              alt="Portfolio present"
-                            />
+                        <div className="col-md-6 container">
+                          <div className="laptop">
+                            <div className="laptop__screen">
+                              <a
+                                href={currentPortfolio.projectLink}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <img
+                                  src={`https://api.optionflow.pro/${currentPortfolio.portfolioImage}`}
+                                  width="1600"
+                                  height="1000"
+                                  alt="Screen"
+                                />
+                              </a>
+                            </div>
+                            <div className="laptop__bottom">
+                              <div className="laptop__under"></div>
+                            </div>
+                            <div className="laptop__shadow"></div>
                           </div>
-                        </a>
+                        </div>
                       </div>
                     </div>
                   </div>
