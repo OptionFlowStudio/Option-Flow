@@ -12,6 +12,7 @@ const ServiceSingle = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const { serviceNewData, setFetchedServiceData } = useContext(DataContext);
+  const [imageLoading, setImageLoading] = useState(null);
   const [currentService, setCurrentService] = useState(null);
 
   const serviceDetailsLink =
@@ -21,9 +22,12 @@ const ServiceSingle = () => {
   useEffect(() => {
     FetchDetailsModule(setCurrentService, serviceDetailsLink, id, navigate);
     FetchModule(undefined, setFetchedServiceData, serviceLink);
+    setImageLoading(true);
   }, [id]);
 
-  console.log(currentService);
+  const handleLoader = () => {
+    setImageLoading(false);
+  };
 
   return (
     <div className="page-wrapper">
@@ -55,20 +59,26 @@ const ServiceSingle = () => {
                         <h2 className="widget-title">Всі послуги</h2>
                         <div className="all-post-list">
                           <ul>
-                            {serviceNewData.map((serviceItem) => (
-                              <li
-                                className={
-                                  serviceItem.id === currentService.id
-                                    ? "post-active"
-                                    : null
-                                }
-                                key={serviceItem.id.toString()}
-                              >
-                                <Link to={`/service-single/${serviceItem.id}`}>
-                                  {serviceItem.title}
-                                </Link>
-                              </li>
-                            ))}
+                            {serviceNewData ? (
+                              serviceNewData.map((serviceItem) => (
+                                <li
+                                  className={
+                                    serviceItem.id === currentService.id
+                                      ? "post-active"
+                                      : null
+                                  }
+                                  key={serviceItem.id.toString()}
+                                >
+                                  <Link
+                                    to={`/service-single/${serviceItem.id}`}
+                                  >
+                                    {serviceItem.title}
+                                  </Link>
+                                </li>
+                              ))
+                            ) : (
+                              <li>Loading...</li>
+                            )}
                           </ul>
                         </div>
                       </aside>
@@ -116,8 +126,11 @@ const ServiceSingle = () => {
                     <img
                       src={`https://api.optionflow.pro/${currentService.service.serviceImage}`}
                       className="w-100"
-                      alt=""
+                      alt="Service Poster"
+                      onLoad={handleLoader}
+                      style={{ display: imageLoading ? "none" : "block" }}
                     />
+                    {imageLoading ? <Loader /> : null}
                     <div className="service-details">
                       <h4 className="pbmit-title">
                         {currentService.service.title}

@@ -636,26 +636,31 @@
   margin-bottom: 30px;
 }
 
+.laptop-container {
+  display: flex;
+  justify-content: center;
+}
+
 .laptop {
   position: relative;
   margin: 0;
-
-  max-width: 60rem;
+  max-width: 38rem;
 }
 .laptop .laptop__screen {
   position: relative;
   z-index: 1;
-  padding: 1.6%;
-  border-radius: 2rem;
+  padding: 1.2%;
+  border-radius: 1rem;
   background: #ecf1f7;
   background-image: linear-gradient(to bottom, #333, #111);
   box-shadow: 0 0.1rem 0 #cfcfcf;
   border: 2px solid #ccc;
 }
+
 .laptop .laptop__screen img {
   display: block;
   max-width: 100%;
-  border-radius: 20px;
+  border-radius: 0.8rem;
   height: auto;
   background: #000;
 }

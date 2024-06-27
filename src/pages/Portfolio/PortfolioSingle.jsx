@@ -16,16 +16,8 @@ const PortfolioSingle = () => {
   const portfolioLink = "https://api.optionflow.pro/api/Main/Portfolio";
 
   useEffect(() => {
-    const detailsFetch = async () => {
-      await FetchDetailsModule(
-        setCurrentPortfolio,
-        portfolioDetailsLink,
-        id,
-        navigate
-      );
-      FetchModule(undefined, setFetchedPortfolioData, portfolioLink);
-    };
-    detailsFetch();
+    FetchDetailsModule(setCurrentPortfolio, portfolioDetailsLink, id, navigate);
+    FetchModule(undefined, setFetchedPortfolioData, portfolioLink);
   }, [id]);
 
   return (
@@ -57,11 +49,6 @@ const PortfolioSingle = () => {
                       <h4>{currentPortfolio.title}</h4>
                       {currentPortfolio.shortTitle}
                     </div>
-                    {/* <img
-                      src={currentPortfolio[0].portfolioImage}
-                      className="img-fluid w-100 mb-4"
-                      alt=""
-                    /> */}
                     <div className="pbmit-single-project-details-list">
                       <div className="pbmit-portfolio-lines-wrapper">
                         <ul className="pbmit-portfolio-lines-ul">
@@ -123,7 +110,7 @@ const PortfolioSingle = () => {
                             </li>
                           </ul>
                         </div>
-                        <div className="col-md-6 container">
+                        <div className="col-md-6 laptop-container">
                           <div className="laptop">
                             <div className="laptop__screen">
                               <a

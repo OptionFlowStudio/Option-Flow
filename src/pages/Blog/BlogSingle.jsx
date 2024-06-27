@@ -11,6 +11,7 @@ const BlogSingle = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const { blogNewData, setFetchedBlogData } = useContext(DataContext);
+  const [imageLoading, setImageLoading] = useState(null);
   const [currentBlog, setCurrentBlog] = useState(null);
 
   let blogDetailsLink = "https://api.optionflow.pro/api/Main/BlogDetails/";
@@ -18,12 +19,14 @@ const BlogSingle = () => {
   let blogLink = "https://api.optionflow.pro/api/Main/Blog";
 
   useEffect(() => {
-    const detailsFetch = async () => {
-      await FetchDetailsModule(setCurrentBlog, blogDetailsLink, id, navigate);
-      FetchModule(undefined, setFetchedBlogData, blogLink);
-    };
-    detailsFetch();
+    FetchDetailsModule(setCurrentBlog, blogDetailsLink, id, navigate);
+    FetchModule(undefined, setFetchedBlogData, blogLink);
+    setImageLoading(true);
   }, [id]);
+
+  const handleLoader = () => {
+    setImageLoading(false);
+  };
 
   return (
     <div className="page-wrapper">
@@ -59,8 +62,13 @@ const BlogSingle = () => {
                                 <img
                                   src={`https://api.optionflow.pro/${currentBlog.blogImage}`}
                                   className="img-fluid w-100"
-                                  alt=""
+                                  alt="Blog Poster"
+                                  onLoad={handleLoader}
+                                  style={{
+                                    display: imageLoading ? "none" : "block",
+                                  }}
                                 />
+                                {imageLoading ? <Loader /> : null}
                               </div>
                               <div
                                 className="pbmit-short-description"

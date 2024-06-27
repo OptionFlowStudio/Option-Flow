@@ -17,13 +17,14 @@ INDEX:
 /* 00 - General 
 /*----------------------------------------*/
 
-/* @import url("https://fonts.googleapis.com/css2?family=Geologica&display=swap"); */
+/* OLD url("https://fonts.gstatic.com/s/geologica/v1/abcdef.woff2")format("woff2") */
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
 
 @font-face {
   font-family: "Geologica";
-  src: url("https://fonts.gstatic.com/s/geologica/v1/abcdef.woff2")
+  src: url("https://db.onlinewebfonts.com/t/5bae5b72e8cf34f03c7ee752cee858e8.woff2")
     format("woff2");
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }

@@ -2078,3 +2078,13 @@ body {
     grid-gap: 30px 30px;
   }
 }
+
+@media (max-width: 670px) {
+  .laptop {
+    max-width: 35rem;
+  }
+  .laptop .laptop__bottom {
+    margin-right: -4%;
+    margin-left: -4%;
+  }
+}
