@@ -4,7 +4,7 @@ import axios from "axios";
 
 const History = () => {
   const [historyData, setHistoryData] = useState(null);
-  const { historyNewData, setFetchedHistoryData } = useContext(DataContext);
+  const { setFetchedHistoryData } = useContext(DataContext);
 
   useEffect(() => {
     const fetchData = async () => {

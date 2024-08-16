@@ -1,11 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const BlogContetBox = ({ blogObject }) => {
+  const navigate = useNavigate();
+
+  const navigateToPage = (id) => {
+    navigate(`/blog-single/${id}`);
+  };
   return (
     <div className="col-sm-12 col-md-4">
       <article className="pbmit-blog-style-6">
-        <div className="post-item">
+        <div
+          className="post-item"
+          onClick={() => navigateToPage(blogObject.id)}
+        >
           <div className="pbmit-featured-container">
             <div className="pbmit-featured-img-wrapper">
               <div className="pbmit-featured-wrapper">

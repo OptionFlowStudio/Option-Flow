@@ -3,7 +3,6 @@ import { NavLink, useLocation } from "react-router-dom";
 import { DataContext } from "../../Context/DataContext";
 
 const CustomLink = ({ propsHref, propsText, children, className }) => {
-  const location = useLocation();
   const { openedHeader, setHeaderOpened } = useContext(DataContext);
   const openHeaderMenu = () => {
     if (openedHeader === true) {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, useCallback } from "react";
 import PortfolioBlock from "./PortfolioBlock";
 import { DataContext } from "../../Context/DataContext";
 import Loader from "../../animation/Loader";
@@ -9,13 +9,18 @@ const Portfolio = () => {
   const { portfolioNewData, setFetchedPortfolioData } = useContext(DataContext);
 
   const portfolioLink = "https://api.optionflow.pro/api/Main/Portfolio";
-  useEffect(() => {
+
+  const fetchDataCallback = useCallback(() => {
     if (portfolioNewData !== null && portfolioData === null) {
       setPortfolioData(portfolioNewData);
     } else if (portfolioData === null) {
       FetchModule(setPortfolioData, setFetchedPortfolioData, portfolioLink);
     }
   }, [portfolioData, portfolioNewData]);
+
+  useEffect(() => {
+    fetchDataCallback();
+  }, [fetchDataCallback]);
 
   return (
     <div className="page-wrapper">

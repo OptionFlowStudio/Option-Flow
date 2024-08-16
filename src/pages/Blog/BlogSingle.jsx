@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useCallback } from "react";
 import { DataContext } from "../../Context/DataContext";
 import { useParams, useNavigate } from "react-router-dom";
 import Loader from "../../animation/Loader";
@@ -18,11 +18,15 @@ const BlogSingle = () => {
 
   let blogLink = "https://api.optionflow.pro/api/Main/Blog";
 
-  useEffect(() => {
+  const fetchDetailsCallback = useCallback(() => {
     FetchDetailsModule(setCurrentBlog, blogDetailsLink, id, navigate);
     FetchModule(undefined, setFetchedBlogData, blogLink);
     setImageLoading(true);
   }, [id]);
+
+  useEffect(() => {
+    fetchDetailsCallback();
+  }, [fetchDetailsCallback]);
 
   const handleLoader = () => {
     setImageLoading(false);

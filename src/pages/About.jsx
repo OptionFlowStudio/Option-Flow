@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useCallback } from "react";
 import { DataContext } from "../Context/DataContext";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -8,19 +8,19 @@ const About = () => {
   const [blogData, setBlogData] = useState(null);
   const { blogNewData, setFetchedBlogData } = useContext(DataContext);
 
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const blogResponse = await axios.get(
-          "https://api.optionflow.pro/api/Main/Blog"
-        );
-        setBlogData(blogResponse.data.slice(0, 3));
-        setFetchedBlogData(blogResponse.data);
-      } catch (error) {
-        console.log("Here is some error in fetch:", error);
-      }
-    };
+  const getData = useCallback(async () => {
+    try {
+      const blogResponse = await axios.get(
+        "https://api.optionflow.pro/api/Main/Blog"
+      );
+      setBlogData(blogResponse.data.slice(0, 3));
+      setFetchedBlogData(blogResponse.data);
+    } catch (error) {
+      console.log("Here is some error in fetch:", error);
+    }
+  }, []);
 
+  useEffect(() => {
     if (blogNewData !== null) {
       setBlogData(blogNewData.slice(0, 3));
     } else {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useCallback } from "react";
 import BlogContetBox from "./BlogContetBox";
 import { DataContext } from "../../Context/DataContext";
 import Loader from "../../animation/Loader";
@@ -13,7 +13,7 @@ const Blog = () => {
 
   let blogLink = "https://api.optionflow.pro/api/Main/Blog";
 
-  useEffect(() => {
+  const fetchDataCallback = useCallback(() => {
     if (category !== undefined) {
       setFilteredData(blogNewData.filter((item) => item.category === category));
     }
@@ -22,7 +22,11 @@ const Blog = () => {
     } else if (blogData === null) {
       FetchModule(setBlogData, setFetchedBlogData, blogLink);
     }
-  }, [category]);
+  }, [category, blogNewData]);
+
+  useEffect(() => {
+    fetchDataCallback();
+  }, [fetchDataCallback]);
 
   let data = category ? filteredData : blogData;
 

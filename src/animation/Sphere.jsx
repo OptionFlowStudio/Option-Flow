@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { render } from "@testing-library/react";
 
 function Sphere() {
@@ -12,7 +12,7 @@ function Sphere() {
   useEffect(() => {
     const width = mountRef.current.clientWidth;
     const height = mountRef.current.clientHeight;
-    const aspectRatio = width / height;
+    // const aspectRatio = width / height;
 
     const scene = new THREE.Scene();
     sceneRef.current = scene;
@@ -21,6 +21,18 @@ function Sphere() {
     window.innerHeight >= 1000
       ? (camera.position.z = 4)
       : (camera.position.z = 2);
+    if (window.innerHeight >= 1000 && window.innerHeight <= 2000) {
+      camera.position.z = 4.3;
+      console.log(window.innerWidth, "width");
+      console.log(window.innerHeight, "heigt");
+    } else if (window.innerHeight >= 2000) {
+      camera.position.z = 6;
+    } else {
+      camera.position.z = 2.1;
+    }
+    // console.log(window.innerWidth, "width");
+    // console.log(window.innerHeight, "heigt");
+    // camera.position.z = (window.innerWidth / window.innerHeight) * 1.2;
     cameraRef.current = camera;
 
     const renderer = new THREE.WebGLRenderer({ alpha: true });

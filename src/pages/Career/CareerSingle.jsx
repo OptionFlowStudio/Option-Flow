@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useCallback } from "react";
 import axios from "axios";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { DataContext } from "../../Context/DataContext";
@@ -18,14 +18,16 @@ const CareerSingle = () => {
     "https://api.optionflow.pro/api/Main/CareerDetails/";
   const careerLink = "https://api.optionflow.pro/api/Main/Career";
 
-  useEffect(() => {
+  const fetchDetailsCallback = useCallback(() => {
     FetchDetailsModule(setCurrentCareer, carrerDetailsLink, id, navigate);
     if (careerNewData === null) {
       FetchModule(undefined, setFetchedCareerData, careerLink);
     }
   }, [id]);
 
-  console.log(currentCareer);
+  useEffect(() => {
+    fetchDetailsCallback();
+  }, [fetchDetailsCallback]);
 
   const sendCV = async (event) => {
     event.preventDefault();

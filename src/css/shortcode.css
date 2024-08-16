@@ -619,6 +619,7 @@ body {
 }
 
 .pbmit-service-style-6 .pbminfotech-post-item {
+  cursor: pointer;
   position: relative;
 }
 
@@ -763,6 +764,7 @@ body {
 .pbmit-portfolio-style-4 .pbminfotech-post-content {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .pbmit-portfolio-style-4 .pbminfotech-overlay {
   position: absolute;
@@ -1231,6 +1233,7 @@ body {
   margin-bottom: 30px;
 }
 .pbmit-blog-style-6 .post-item {
+  cursor: pointer;
   position: relative;
   padding: 20px;
   background-color: var(--pbmit-blackish-color);
@@ -1315,6 +1318,7 @@ body {
   margin-bottom: 30px;
 }
 .pbmit-career-style .career-item {
+  cursor: pointer;
   position: relative;
   padding: 20px;
   background-color: var(--pbmit-blackish-color);

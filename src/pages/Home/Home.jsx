@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Sphere from "../../animation/Sphere.jsx";
@@ -10,7 +10,7 @@ import smmImg from "../../Images/internet/smm-service.png";
 import itImg from "../../Images/internet/it-service.png";
 
 const Home = () => {
-  const [cardData, setCardData] = useState([
+  const [cardData] = useState([
     {
       id: 1,
       name: "Розробка Web-сайтів",

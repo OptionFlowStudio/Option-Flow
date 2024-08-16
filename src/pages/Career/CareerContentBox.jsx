@@ -1,11 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CareerContentBox = ({ careerObject }) => {
+  const navigate = useNavigate();
+
+  const navigateToPage = (id) => {
+    navigate(`/career-single/${id}`);
+  };
   return (
     <div className="col-sm-12 col-md-4">
       <article className="pbmit-career-style">
-        <div className="career-item">
+        <div
+          className="career-item"
+          onClick={() => navigateToPage(careerObject.id)}
+        >
           <div className="pbminfotech-box-content">
             <div className="pbmit-box-content-wrapper">
               <h3 className="pbmit-career-title">

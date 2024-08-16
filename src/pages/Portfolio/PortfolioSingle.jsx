@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, useCallback } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { DataContext } from "../../Context/DataContext";
 import Loader from "../../animation/Loader";
@@ -8,17 +8,21 @@ import FetchModule from "../../components/module/FetchModule";
 const PortfolioSingle = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-  const { portfolioNewData, setFetchedPortfolioData } = useContext(DataContext);
+  const { setFetchedPortfolioData } = useContext(DataContext);
   const [currentPortfolio, setCurrentPortfolio] = useState(null);
 
   const portfolioDetailsLink =
     "https://api.optionflow.pro/api/Main/PortfolioDetails/";
   const portfolioLink = "https://api.optionflow.pro/api/Main/Portfolio";
 
-  useEffect(() => {
+  const fetchDetailsCallback = useCallback(() => {
     FetchDetailsModule(setCurrentPortfolio, portfolioDetailsLink, id, navigate);
     FetchModule(undefined, setFetchedPortfolioData, portfolioLink);
   }, [id]);
+
+  useEffect(() => {
+    fetchDetailsCallback();
+  }, [fetchDetailsCallback]);
 
   return (
     <div className="page-wrapper">

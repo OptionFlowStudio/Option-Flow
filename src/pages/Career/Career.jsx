@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useCallback } from "react";
 import { DataContext } from "../../Context/DataContext";
 import CareerContentBox from "./CareerContentBox";
 import Loader from "../../animation/Loader";
@@ -8,15 +8,17 @@ const Career = () => {
   const [careerData, setCareerData] = useState(null);
   const { careerNewData, setFetchedCareerData } = useContext(DataContext);
   let careerLink = "https://api.optionflow.pro/api/Main/Career";
-  useEffect(() => {
+
+  const fetchDataCallback = useCallback(() => {
     if (careerNewData !== null && careerData === null) {
       setCareerData(careerNewData);
     } else if (careerData === null) {
       FetchModule(setCareerData, setFetchedCareerData, careerLink);
     }
-  }, [careerData, setCareerData, setFetchedCareerData]);
-
-  console.log(careerData);
+  });
+  useEffect(() => {
+    fetchDataCallback();
+  }, [fetchDataCallback]);
 
   return (
     <div className="page-wrapper">

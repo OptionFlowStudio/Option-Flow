@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useCallback } from "react";
 import ServiceContentBox from "./ServiceContentBox";
 import { DataContext } from "../../Context/DataContext";
 import Loader from "../../animation/Loader";
@@ -9,13 +9,18 @@ const Service = () => {
   const { serviceNewData, setFetchedServiceData } = useContext(DataContext);
 
   const serviceLink = "https://api.optionflow.pro/api/Main/Services";
-  useEffect(() => {
+
+  const fetchDataCallback = useCallback(() => {
     if (serviceNewData !== null && serviceData === null) {
       setServiceData(serviceNewData);
     } else if (serviceData === null) {
       FetchModule(setServiceData, setFetchedServiceData, serviceLink);
     }
   }, [serviceData, serviceNewData]);
+
+  useEffect(() => {
+    fetchDataCallback();
+  }, [fetchDataCallback]);
   return (
     <div>
       <div className="page-wrapper">
@@ -40,12 +45,7 @@ const Service = () => {
                 {serviceData ? (
                   serviceData.map((serviceItem) => (
                     <ServiceContentBox
-                      serviceTitle={serviceItem.title}
-                      serviceCategory={serviceItem.category}
-                      serviceLink={`/service-single/${serviceItem.id}`}
-                      serviceImg={serviceItem.serviceImageLow}
-                      serviceDescription={serviceItem.description}
-                      serviceIcon={serviceItem.iconType}
+                      serviceObject={serviceItem}
                       key={serviceItem.id}
                     />
                   ))

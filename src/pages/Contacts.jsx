@@ -23,10 +23,7 @@ const Contacts = () => {
 
     const FormSended = async () => {
       try {
-        const response = await axios.post(
-          "https://api.optionflow.pro/api/Main/Contact",
-          data
-        );
+        await axios.post("https://api.optionflow.pro/api/Main/Contact", data);
         localStorage.setItem(`formSended`, true);
       } catch (error) {
         console.log("We got Error", error);
@@ -246,7 +243,7 @@ const Contacts = () => {
                   <div className="pbmit-ihbox-style-20">
                     <div className="pbmit-ihbox-box d-flex align-items-center">
                       <Link
-                        to="tel: +38(099)7607669"
+                        to="tel: +38 (095) 777 84 95"
                         className="about-us-email-widget"
                       >
                         <div className="pbmit-ihbox-icon">
@@ -261,7 +258,7 @@ const Contacts = () => {
                             Телефонуйте у будь-який час
                           </div>
                           <h2 className="pbmit-element-title">
-                            +38 (099) 760 76 69
+                            +38 (095) 777 84 95
                           </h2>
                         </div>
                       </Link>

@@ -1,4 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import { DataContext } from "../../Context/DataContext";
 import { useParams } from "react-router-dom";
 import logoBlack from "./../../Images/logo.svg";
@@ -19,11 +25,15 @@ const ServiceSingle = () => {
     "https://api.optionflow.pro/api/Main/ServiceDetails/";
   const serviceLink = "https://api.optionflow.pro/api/Main/Services";
 
-  useEffect(() => {
+  const fetchDetailsCallback = useCallback(() => {
     FetchDetailsModule(setCurrentService, serviceDetailsLink, id, navigate);
     FetchModule(undefined, setFetchedServiceData, serviceLink);
     setImageLoading(true);
   }, [id]);
+
+  useEffect(() => {
+    fetchDetailsCallback();
+  }, [fetchDetailsCallback]);
 
   const handleLoader = () => {
     setImageLoading(false);

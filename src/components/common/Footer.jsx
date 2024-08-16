@@ -65,8 +65,8 @@ const Footer = () => {
                       Потрібна жива підтримка?
                     </div>
                     <div className="pbmit-contact-box">
-                      <Link to="tel:+38 (099) 760 76 69">
-                        +38 (099) 760 76 69
+                      <Link to="tel:+38 (095) 777 84 95">
+                        +38 (095) 777 84 95
                       </Link>
                     </div>
                   </div>
@@ -77,16 +77,6 @@ const Footer = () => {
               <div className="widget">
                 <h3 className="widget-title">Розсилка Новин</h3>
                 <div className="mc4wp-form-fields">
-                  {/* <div className="pbmit-footer-newsletter">
-                    <input
-                      type="email"
-                      name="EMAIL"
-                      placeholder="Додайте вашу пошту"
-                    />
-                    <button type="submit" value="Sign up">
-                      <i className="pbmit-base-icon-arroba"></i>
-                    </button>
-                  </div> */}
                   <FooterEmailForm />
                   Наші знання, досвід і пристрасть до веб-дизайну вирізняють нас
                   серед інших агентств.
@@ -96,6 +86,7 @@ const Footer = () => {
                     <a
                       href="https://www.linkedin.com/company/optionflow/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <span>
                         <i className="pbmit-base-icon-linkedin-squared"></i>
@@ -106,7 +97,7 @@ const Footer = () => {
                     <a
                       href="https://www.instagram.com/optionflow.pro?igsh=N2djbzNja3BmN3Bt"
                       target="_blank"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                     >
                       <span>
                         <i className="pbmit-base-icon-instagram"></i>

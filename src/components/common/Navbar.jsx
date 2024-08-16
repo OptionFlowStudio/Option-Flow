@@ -62,8 +62,8 @@ const Navbar = () => {
                     <ul className="pbmit-contact-info">
                       <li>
                         <i className="pbmit-base-icon-phone-volume-solid"></i>
-                        <Link to="tel: +38(099)7607669">
-                          Телефон: <span>+38 (099) 760 76 69</span>
+                        <Link to="tel: +38(095)777 84 95">
+                          Телефон: <span>+38 (095) 777 84 95</span>
                         </Link>
                       </li>
                       <li>
@@ -206,7 +206,7 @@ const Navbar = () => {
                                     <li>
                                       <CustomLink
                                         propsHref={"/faq"}
-                                        propsText={"Faq"}
+                                        propsText={"FAQ"}
                                       />
                                     </li>
                                   </ul>
@@ -399,7 +399,7 @@ const Navbar = () => {
                                   >
                                     <CustomLink
                                       propsHref={"/faq"}
-                                      propsText={"Faq"}
+                                      propsText={"FAQ"}
                                     />
                                   </li>
                                 </ul>

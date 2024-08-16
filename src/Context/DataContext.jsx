@@ -1,5 +1,4 @@
 import React, { createContext, useState } from "react";
-import { log } from "three/examples/jsm/nodes/Nodes.js";
 
 const DataContext = createContext();
 

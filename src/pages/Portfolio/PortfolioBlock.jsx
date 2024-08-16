@@ -1,11 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const PortfolioBlock = ({ portfolioObject }) => {
+  const navigate = useNavigate();
+
+  const navigateToPage = (id) => {
+    navigate(`/portfolio-single/${id}`);
+  };
+
   return (
     <div className="col-sm-12 col-md-4">
       <article className="pbmit-portfolio-style-4">
-        <div className="pbminfotech-post-content">
+        <div
+          className="pbminfotech-post-content"
+          onClick={() => navigateToPage(portfolioObject.id)}
+        >
           <div className="pbmit-image-wrapper">
             <div className="pbmit-featured-img-wrapper">
               <div className="pbmit-featured-wrapper">
