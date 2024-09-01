@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import Home from "./pages/Home/Home";
 import { Route, Routes } from "react-router";
 import Service from "./pages/Service/Service";
@@ -27,11 +27,31 @@ import "./css/responsive.css";
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 import ScrollTop from "./components/common/ScrollTop";
+import BigAnimation from "./animation/BigAnimation";
 
 const App = () => {
+  const [showAnimation, setShowAnimation] = useState(true);
+
+  useLayoutEffect(() => {
+    document.body.style.overflow = "hidden ";
+    const animationTimer = setTimeout(() => {
+      setShowAnimation(false);
+    }, 2000);
+
+    return () => {
+      clearTimeout(animationTimer);
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   return (
     <div>
       <DataProvider>
+        {showAnimation ? (
+          <BigAnimation
+            propsClassName={showAnimation === false ? "animDelete" : null}
+          />
+        ) : null}
         <ScrollTop />
         <Navbar />
         <Routes>
