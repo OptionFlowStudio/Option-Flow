@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bec0da2b.css",
-    "main.js": "/static/js/main.b1e4c2df.js",
+    "main.js": "/static/js/main.3c9c4314.js",
     "static/media/flaticon.svg": "/static/media/flaticon.8dbedf60258bbe4aa064.svg",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/it-service.png": "/static/media/it-service.b68ce1eca29652408fd2.png",
@@ -20,7 +20,6 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/pbminfotech-base-icons.svg?57815348": "/static/media/pbminfotech-base-icons.db3e98b772139d3828e4.svg",
     "static/media/flaticon.woff": "/static/media/flaticon.ca7e969a6ee884ac5edf.woff",
-    "static/media/neuron.png": "/static/media/neuron.79a4d333416060716e4e.png",
     "static/media/flaticon.woff2": "/static/media/flaticon.4c77423ea305f424d399.woff2",
     "static/media/pbminfotech-base-icons.eot?57815348": "/static/media/pbminfotech-base-icons.da424953710126c841bf.eot",
     "static/media/pbminfotech-base-icons.ttf?57815348": "/static/media/pbminfotech-base-icons.f4ba7ad5d3f6adedca05.ttf",
@@ -28,16 +27,17 @@
     "static/media/pbminfotech-base-icons.woff2?57815348": "/static/media/pbminfotech-base-icons.764a6fc552d47cb6250e.woff2",
     "static/media/logo.svg": "/static/media/logo.dffb1ce0ddbde9ac81f6d62a3055b837.svg",
     "static/media/logo-white.svg": "/static/media/logo-white.5d6b1149310c199db0de4bf9556b4ceb.svg",
+    "static/media/neuron.svg": "/static/media/neuron.9288400e84d6b65c01c253c4339d9818.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.bec0da2b.css.map": "/static/css/main.bec0da2b.css.map",
-    "main.b1e4c2df.js.map": "/static/js/main.b1e4c2df.js.map"
+    "main.3c9c4314.js.map": "/static/js/main.3c9c4314.js.map"
   },
   "entrypoints": [
     "static/css/main.bec0da2b.css",
-    "static/js/main.b1e4c2df.js"
+    "static/js/main.3c9c4314.js"
   ]
 }
