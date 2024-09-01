@@ -3,7 +3,7 @@ import neuron from "../Images/neuron.png";
 
 const BigAnimation = ({ propsClassName }) => {
   return (
-    <div className={`animation-block ${propsClassName}`}>
+    <div className={`custom-animation-block ${propsClassName}`}>
       <div className="animation-wrap">
         <div className="img-wrap">
           <img src={neuron} alt="logo-neuron" />
