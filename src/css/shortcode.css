@@ -2245,19 +2245,24 @@ ul.list-group .list-group-item i {
   background-color: #000031;
 }
 
+.animation-text {
+  height: 150px;
+}
+
 .animation-text .first-text {
+  margin-top: 20px;
   color: white;
   margin-left: -95px;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   animation: moveTopText 1.5s ease-in forwards;
 }
 
 .animation-text .second-text {
   color: white;
   margin-left: -10px;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bold;
   animation: moveBottomText 1.5s ease-in forwards;
 }
@@ -2272,7 +2277,7 @@ ul.list-group .list-group-item i {
     opacity: 0;
   }
   100% {
-    margin-left: -95px;
+    margin-left: -70px;
     position: relative;
     opacity: 1;
   }
@@ -2289,8 +2294,40 @@ ul.list-group .list-group-item i {
   }
 
   100% {
-    margin-left: -10px;
+    margin-left: 20px;
     position: relative;
     opacity: 1;
+  }
+}
+
+@media (max-width: 535px) {
+  .animation-wrap img {
+    width: 200px;
+    height: 250px;
+  }
+  .animation-text .first-text {
+    font-size: 60px;
+    margin-bottom: 20px;
+    animation: moveSmallTopText 1.5s ease-in forwards;
+  }
+
+  .animation-text .second-text {
+    font-size: 60px;
+  }
+
+  @keyframes moveSmallTopText {
+    0% {
+      margin-left: -380px;
+      opacity: 0;
+    }
+
+    80% {
+      opacity: 0;
+    }
+    100% {
+      margin-left: -50px;
+      position: relative;
+      opacity: 1;
+    }
   }
 }
