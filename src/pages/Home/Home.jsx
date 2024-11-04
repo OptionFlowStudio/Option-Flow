@@ -8,29 +8,30 @@ import Loader from "../../animation/Loader.jsx";
 import webImg from "../../Images/internet/web-service.png";
 import smmImg from "../../Images/internet/smm-service.png";
 import itImg from "../../Images/internet/it-service.png";
+import video from "../../animation/vid.mp4";
 
 const Home = () => {
   const [cardData] = useState([
     {
       id: 1,
-      name: "Розробка Web-сайтів",
+      name: "Web-сайти",
       imageUrl: webImg,
       link: "/service-single/13",
       category: {
-        category1: "ASP.NET / ASP.NET Core...",
-        category2: "React, HTML, CSS...",
-        category3: "Ecommers, WordPress...",
+        category1: "Інтерфейси та корпоративні сайти",
+        category2: "Лендинги та портфоліо",
+        category3: "Веб-додатки",
       },
     },
     {
       id: 2,
-      name: "SMM-послуги",
+      name: "Мобільні додатки",
       imageUrl: smmImg,
       link: "/service-single/11",
       category: {
-        category1: "Розробка стратегії",
-        category2: "Управління контентом",
-        category3: "Реклама в соціальних мережах",
+        category1: "Мобільні додатки для бізнесу",
+        category2: "Інтерактивні додатки",
+        category3: "Клієнт-серверні додатки",
       },
     },
     {
@@ -43,6 +44,33 @@ const Home = () => {
         category2: "Оптимізація бізнес-процесів",
         category3: "Управління ІТ-ризиками",
       },
+    },
+  ]);
+
+  const serviceItemSection = useState([
+    {
+      icon: "pbmit-xido-icon-satellite",
+      title: "Веб-сайти для бізнесу",
+      description:
+        " Розробляємо веб-сайти які не лише презентують вашу компанію, а й автоматизують бізнес-процеси",
+    },
+    {
+      icon: "pbmit-xido-icon-ar-camera",
+      title: "Мобільні додатки",
+      description:
+        "Наявність мобільного додатку підвищує технологічний статус вашого бренду, створюючи враження сучасності та інноваційності",
+    },
+    {
+      icon: "pbmit-xido-icon-design",
+      title: "UI/UX дизайн та прототипування",
+      description:
+        "Створення UX/UI дизайну для будь-якого проекту, який буде лаконічним та інтуїтивно зрозумілим",
+    },
+    {
+      icon: "pbmit-xido-icon-local-area-network",
+      title: "Корпоративні додатки",
+      description:
+        "Створюємо внутрішні додатки для компаній, що дозволяють краще керувати бізнес-процесами, спростити роботу з клієнтами чи партнерами, або підвищити продуктивність",
     },
   ]);
   const [servicesData, setServicesData] = useState({});
@@ -73,19 +101,21 @@ const Home = () => {
   return (
     <div className="page-wrapper">
       <div className="page-content pbmit-bg-color-light">
+        {/* <div className="background-video">
+          <video
+            className="video"
+            src={video}
+            autoPlay
+            muted
+            loop
+            type="video/mp4"
+          ></video>
+        </div> */}
         <section className="banner-section-bg">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-6 col-md-12">
                 <div className="pbmit-text-style-6">
-                  <h1 style={{ userSelect: "none" }}>&nbsp;</h1>
-                  <h6 className="pbmit-subtitle">
-                    <span className="text-style">
-                      ЛАСКАВО ПРОСИМО ДО
-                      <span className="color-text-name"> Option Flow </span>
-                      web-studio
-                    </span>
-                  </h6>
                   <h2 className="pbmit-title">
                     Цифрова ідентичність - як головна мета
                   </h2>
@@ -99,9 +129,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-6 col-md-12">
-                <Sphere />
-              </div>
+              <div className="col-xl-6 col-md-12">{<Sphere />}</div>
             </div>
           </div>
         </section>
@@ -154,10 +182,10 @@ const Home = () => {
             <div className="row align-items-center align-content-center">
               <div className="col-xl-6 col-md-12 agency-right-section-home6">
                 <div className="pbmit-heading-subheading-style-6">
-                  <h4 className="pbmit-subtitle">РОЗРОБКА ВЕБ-ДОДАТКІВ</h4>
-                  <h2 className="pbmit-title">
-                    Розробка під ключ від OptionFlow
-                  </h2>
+                  <h4 className="pbmit-subtitle">
+                    Створюйте нове з OptionFlow
+                  </h4>
+                  <h2 className="pbmit-title">Розробка під ключ</h2>
                 </div>
                 <div className="mb-4">
                   Завдяки нашим спеціалістам - ваш проєкт буде реалізовано від
@@ -167,45 +195,46 @@ const Home = () => {
               </div>
             </div>
             <div className="sub-section">
-              <div className="pbmit-ihbox-style-9">
-                <div className="pbmit-ihbox-box d-flex align-items-center">
-                  <div className="pbmit-ihbox-icon">
-                    <div className="pbmit-ihbox-icon-wrapper">
-                      <div className="pbmit-icon-wrapper pbmit-icon-type-icon">
-                        <i className="pbmit-xido-icon pbmit-xido-icon-satellite"></i>
+              {serviceItemSection[0].slice(0, 2).map((item) => (
+                <div className="pbmit-ihbox-style-9">
+                  <div className="pbmit-ihbox-box d-flex align-items-center">
+                    <div className="pbmit-ihbox-icon">
+                      <div className="pbmit-ihbox-icon-wrapper">
+                        <div className="pbmit-icon-wrapper pbmit-icon-type-icon">
+                          <i className={`pbmit-xido-icon ${item.icon}`}></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pbmit-ihbox-contents">
+                      <h2 className="pbmit-element-title">{item.title}</h2>
+                      <div className="pbmit-heading-desc">
+                        {item.description}
                       </div>
                     </div>
                   </div>
-                  <div className="pbmit-ihbox-contents">
-                    <h2 className="pbmit-element-title">
-                      Веб-сайти для бізнесу
-                    </h2>
-                    <div className="pbmit-heading-desc">
-                      Розробляємо веб-сайти які не лише презентують вашу
-                      компанію, а й автоматизують бізнес-процеси
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div className="pbmit-ihbox-style-9">
-                <div className="pbmit-ihbox-box d-flex align-items-center">
-                  <div className="pbmit-ihbox-icon">
-                    <div className="pbmit-ihbox-icon-wrapper">
-                      <div className="pbmit-icon-wrapper pbmit-icon-type-icon">
-                        <i className="pbmit-xido-icon  pbmit-xido-icon-ar-camera"></i>
+              ))}
+            </div>
+            <div className="sub-section">
+              {serviceItemSection[0].slice(2, 4).map((item) => (
+                <div className="pbmit-ihbox-style-9">
+                  <div className="pbmit-ihbox-box d-flex align-items-center">
+                    <div className="pbmit-ihbox-icon">
+                      <div className="pbmit-ihbox-icon-wrapper">
+                        <div className="pbmit-icon-wrapper pbmit-icon-type-icon">
+                          <i className={`pbmit-xido-icon ${item.icon}`}></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pbmit-ihbox-contents">
+                      <h2 className="pbmit-element-title">{item.title}</h2>
+                      <div className="pbmit-heading-desc">
+                        {item.description}
                       </div>
                     </div>
                   </div>
-                  <div className="pbmit-ihbox-contents">
-                    <h2 className="pbmit-element-title">Мобільні додатки</h2>
-                    <div className="pbmit-heading-desc">
-                      Наявність мобільного додатку підвищує технологічний статус
-                      вашого бренду, створюючи враження сучасності та
-                      інноваційності
-                    </div>
-                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>

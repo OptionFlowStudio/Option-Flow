@@ -82,6 +82,13 @@
   background-size: cover;
   padding: 100px 0px 0px 0px;
   position: relative;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1; */
 }
 
 .pbmit-heading-desc {
@@ -1776,4 +1783,17 @@ textarea.form-control:focus {
   100% {
     transform: scale(1) rotate(360deg);
   }
+}
+
+.background-video {
+  /* position: relative; */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }

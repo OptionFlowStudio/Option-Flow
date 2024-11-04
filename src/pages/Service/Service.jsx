@@ -10,10 +10,12 @@ const Service = () => {
 
   const serviceLink = "https://api.optionflow.pro/api/Main/Services";
 
+  const notEmptyData = serviceData || serviceNewData;
+
   const fetchDataCallback = useCallback(() => {
-    if (serviceNewData !== null && serviceData === null) {
+    if (notEmptyData !== null) {
       setServiceData(serviceNewData);
-    } else if (serviceData === null) {
+    } else {
       FetchModule(setServiceData, setFetchedServiceData, serviceLink);
     }
   }, [serviceData, serviceNewData]);

@@ -10,10 +10,12 @@ const Portfolio = () => {
 
   const portfolioLink = "https://api.optionflow.pro/api/Main/Portfolio";
 
+  const notEmptyData = portfolioData || portfolioNewData;
+
   const fetchDataCallback = useCallback(() => {
-    if (portfolioNewData !== null && portfolioData === null) {
+    if (notEmptyData !== null) {
       setPortfolioData(portfolioNewData);
-    } else if (portfolioData === null) {
+    } else {
       FetchModule(setPortfolioData, setFetchedPortfolioData, portfolioLink);
     }
   }, [portfolioData, portfolioNewData]);

@@ -13,13 +13,18 @@ const Blog = () => {
 
   let blogLink = "https://api.optionflow.pro/api/Main/Blog";
 
+  const notEmptyData = blogData || blogNewData;
+
   const fetchDataCallback = useCallback(() => {
-    if (category !== undefined) {
-      setFilteredData(blogNewData.filter((item) => item.category === category));
+    if (category !== undefined && notEmptyData !== null) {
+      setFilteredData(
+        notEmptyData.filter((item) => item.category === category)
+      );
     }
-    if (blogNewData !== null && blogData === null) {
-      setBlogData(blogNewData);
-    } else if (blogData === null) {
+
+    if (notEmptyData !== null) {
+      setBlogData(notEmptyData);
+    } else {
       FetchModule(setBlogData, setFetchedBlogData, blogLink);
     }
   }, [category, blogNewData]);

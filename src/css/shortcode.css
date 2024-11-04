@@ -725,7 +725,7 @@
   opacity: 1;
   visibility: visible;
 }
-.pbmit-service-style-6 .pbminfotech-post-item::before {
+/* .pbmit-service-style-6 .pbminfotech-post-item::before {
   content: counter(pbmitbox1, decimal-leading-zero);
   counter-increment: pbmitbox1;
   position: absolute;
@@ -735,7 +735,7 @@
   line-height: 18px;
   color: rgba(255, 255, 255, 0.3);
   z-index: 1;
-}
+} */
 .pbmit-bg-color-secondary .pbmit-service-style-6 .pbmit-service-title a {
   color: var(--pbmit-white-color);
 }

@@ -10,11 +10,11 @@ const TabContent = ({ tabData }) => {
           <div className="col-xl-5 col-md-12">
             <div className="pbmit-sticky">
               <div className="pbmit-heading-subheading-style-3 pe-5">
-                <h4 className="pbmit-subtitle text-white">
+                {/* <h4 className="pbmit-subtitle text-white">
                   Чому обирають саме нас
-                </h4>
+                </h4> */}
                 <h2 className="pbmit-title text-white">
-                  Високі стандарти нашої роботи
+                  Чому обирають саме нас
                 </h2>
                 <div className="pbmit-heading-desc pe-5">
                   З розробкою від OptionFlow ви можете бути впевнені, що ваш

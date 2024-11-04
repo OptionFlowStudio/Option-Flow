@@ -9,13 +9,16 @@ const Career = () => {
   const { careerNewData, setFetchedCareerData } = useContext(DataContext);
   let careerLink = "https://api.optionflow.pro/api/Main/Career";
 
+  const notEmptyData = careerData || careerNewData;
+
   const fetchDataCallback = useCallback(() => {
-    if (careerNewData !== null && careerData === null) {
+    if (notEmptyData !== null) {
       setCareerData(careerNewData);
-    } else if (careerData === null) {
+    } else {
       FetchModule(setCareerData, setFetchedCareerData, careerLink);
     }
   });
+
   useEffect(() => {
     fetchDataCallback();
   }, [fetchDataCallback]);
