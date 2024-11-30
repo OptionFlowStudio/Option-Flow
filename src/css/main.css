@@ -1,0 +1,17 @@
+.button {
+  border-radius: 50px;
+  background-color: var(--pbmit-global-color);
+  padding: 20px;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+  color: white;
+  background-color: var(--pbmit-blackish-color);
+  transition: 0.2s ease-in-out;
+}
+
+.button .secondaryHover {
+  background-color: var(--pbmit-global-color);
+}

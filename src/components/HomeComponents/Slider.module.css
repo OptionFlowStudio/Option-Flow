@@ -1,0 +1,10 @@
+.sliderContainer {
+  width: 100%;
+}
+
+.slide {
+  width: 440px;
+  height: 400px;
+  background-color: var(--pbmit-blackish-color);
+  border: 1px solid #354779;
+}

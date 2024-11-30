@@ -99,119 +99,119 @@
 
 // export default Sphere;
 
-import * as THREE from "three";
-import { useEffect, useRef } from "react";
+// import * as THREE from "three";
+// import { useEffect, useRef } from "react";
 
-function Sphere() {
-  const sceneRef = useRef(null);
-  const mountRef = useRef(null);
-  const cameraRef = useRef(null);
-  const rendererRef = useRef(null);
+// function Sphere() {
+//   const sceneRef = useRef(null);
+//   const mountRef = useRef(null);
+//   const cameraRef = useRef(null);
+//   const rendererRef = useRef(null);
 
-  useEffect(() => {
-    const mount = mountRef.current;
-    const width = mount.clientWidth;
-    const height = mount.clientHeight;
-    const dpr = window.devicePixelRatio || 1;
+//   useEffect(() => {
+//     const mount = mountRef.current;
+//     const width = mount.clientWidth;
+//     const height = mount.clientHeight;
+//     const dpr = window.devicePixelRatio || 1;
 
-    const scene = new THREE.Scene();
-    sceneRef.current = scene;
+//     const scene = new THREE.Scene();
+//     sceneRef.current = scene;
 
-    // Детализируем расчет позиции камеры в зависимости от конкретных устройств
-    const getCameraZPosition = () => {
-      const screenHeight = window.innerHeight;
-      const screenWidth = window.innerWidth;
+//     // Детализируем расчет позиции камеры в зависимости от конкретных устройств
+//     const getCameraZPosition = () => {
+//       const screenHeight = window.innerHeight;
+//       const screenWidth = window.innerWidth;
 
-      if (screenHeight > 900 && screenHeight < 1180) {
-        return 2.5;
-      }
+//       if (screenHeight > 900 && screenHeight < 1180) {
+//         return 2.5;
+//       }
 
-      if (screenHeight >= 1180 && screenHeight <= 1400) {
-        return 3;
-      }
+//       if (screenHeight >= 1180 && screenHeight <= 1400) {
+//         return 3;
+//       }
 
-      if (screenHeight >= 1400 && screenHeight <= 1600) {
-        return 3.4;
-      }
+//       if (screenHeight >= 1400 && screenHeight <= 1600) {
+//         return 3.4;
+//       }
 
-      if (screenHeight >= 1600 && screenHeight <= 2050) {
-        return 4.3;
-      }
+//       if (screenHeight >= 1600 && screenHeight <= 2050) {
+//         return 4.3;
+//       }
 
-      if (screenHeight >= 2050) {
-        return 5;
-      }
+//       if (screenHeight >= 2050) {
+//         return 5;
+//       }
 
-      if (screenHeight > 600 && screenHeight <= 900 && screenWidth > 1000) {
-        return 2.1;
-      } else {
-        return 2.5;
-      }
-    };
+//       if (screenHeight > 600 && screenHeight <= 900 && screenWidth > 1000) {
+//         return 2.1;
+//       } else {
+//         return 2.5;
+//       }
+//     };
 
-    // Устанавливаем камеру с динамическим Z-положением
-    const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-    camera.position.z = getCameraZPosition();
-    cameraRef.current = camera;
+//     // Устанавливаем камеру с динамическим Z-положением
+//     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+//     camera.position.z = getCameraZPosition();
+//     cameraRef.current = camera;
 
-    const renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setSize(width, height);
-    mount.appendChild(renderer.domElement);
-    renderer.setPixelRatio(dpr); // Поддержка высокого DPI
-    rendererRef.current = renderer;
+//     const renderer = new THREE.WebGLRenderer({ alpha: true });
+//     renderer.setSize(width, height);
+//     mount.appendChild(renderer.domElement);
+//     renderer.setPixelRatio(dpr); // Поддержка высокого DPI
+//     rendererRef.current = renderer;
 
-    const sphereContainer = new THREE.Group();
+//     const sphereContainer = new THREE.Group();
 
-    const numSpheres = 500;
-    const sphereRadius = 0.01;
+//     const numSpheres = 500;
+//     const sphereRadius = 0.01;
 
-    for (let i = 0; i < numSpheres; i++) {
-      const geometry = new THREE.SphereGeometry(sphereRadius, 20, 20);
-      const material = new THREE.MeshBasicMaterial({ color: 0x5f51e3 });
+//     for (let i = 0; i < numSpheres; i++) {
+//       const geometry = new THREE.SphereGeometry(sphereRadius, 20, 20);
+//       const material = new THREE.MeshBasicMaterial({ color: 0x5f51e3 });
 
-      const sphere = new THREE.Mesh(geometry, material);
-      const phi = Math.acos(-1 + (2 * i) / numSpheres);
-      const theta = Math.sqrt(numSpheres * Math.PI) * phi;
+//       const sphere = new THREE.Mesh(geometry, material);
+//       const phi = Math.acos(-1 + (2 * i) / numSpheres);
+//       const theta = Math.sqrt(numSpheres * Math.PI) * phi;
 
-      sphere.position.x = Math.cos(theta) * Math.sin(phi);
-      sphere.position.y = Math.sin(theta) * Math.sin(phi);
-      sphere.position.z = Math.cos(phi);
-      sphereContainer.add(sphere);
-    }
+//       sphere.position.x = Math.cos(theta) * Math.sin(phi);
+//       sphere.position.y = Math.sin(theta) * Math.sin(phi);
+//       sphere.position.z = Math.cos(phi);
+//       sphereContainer.add(sphere);
+//     }
 
-    scene.add(sphereContainer);
+//     scene.add(sphereContainer);
 
-    const animate = () => {
-      requestAnimationFrame(animate);
-      sphereContainer.rotation.x += 0.004;
-      sphereContainer.rotation.y += 0.006;
-      renderer.render(scene, camera);
-    };
+//     const animate = () => {
+//       requestAnimationFrame(animate);
+//       sphereContainer.rotation.x += 0.004;
+//       sphereContainer.rotation.y += 0.006;
+//       renderer.render(scene, camera);
+//     };
 
-    animate();
+//     animate();
 
-    const handleResize = () => {
-      const newWidth = mount.clientWidth;
-      const newHeight = mount.clientHeight;
+//     const handleResize = () => {
+//       const newWidth = mount.clientWidth;
+//       const newHeight = mount.clientHeight;
 
-      renderer.setSize(newWidth, newHeight);
-      camera.aspect = newWidth / newHeight;
-      camera.position.z = getCameraZPosition(); // Обновляем положение камеры
-      camera.updateProjectionMatrix();
-    };
+//       renderer.setSize(newWidth, newHeight);
+//       camera.aspect = newWidth / newHeight;
+//       camera.position.z = getCameraZPosition(); // Обновляем положение камеры
+//       camera.updateProjectionMatrix();
+//     };
 
-    window.addEventListener("resize", handleResize);
+//     window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      if (rendererRef.current) {
-        rendererRef.current.dispose();
-        mount.removeChild(rendererRef.current.domElement);
-      }
-    };
-  }, []);
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//       if (rendererRef.current) {
+//         rendererRef.current.dispose();
+//         mount.removeChild(rendererRef.current.domElement);
+//       }
+//     };
+//   }, []);
 
-  return <div ref={mountRef} className="sphere"></div>;
-}
+//   return <div ref={mountRef} className="sphere"></div>;
+// }
 
-export default Sphere;
+// export default Sphere;

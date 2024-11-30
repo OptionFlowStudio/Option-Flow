@@ -8,7 +8,7 @@ import Loader from "../../animation/Loader.jsx";
 import webImg from "../../Images/internet/web-service.png";
 import smmImg from "../../Images/internet/smm-service.png";
 import itImg from "../../Images/internet/it-service.png";
-import video from "../../animation/vid.mp4";
+import video from "../../animation/ooo.mp4";
 
 const Home = () => {
   const [cardData] = useState([
@@ -101,7 +101,7 @@ const Home = () => {
   return (
     <div className="page-wrapper">
       <div className="page-content pbmit-bg-color-light">
-        {/* <div className="background-video">
+        <div className="background-video">
           <video
             className="video"
             src={video}
@@ -110,7 +110,7 @@ const Home = () => {
             loop
             type="video/mp4"
           ></video>
-        </div> */}
+        </div>
         <section className="banner-section-bg">
           <div className="container">
             <div className="row align-items-center">
@@ -129,7 +129,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-6 col-md-12">{<Sphere />}</div>
+              {/* <div className="col-xl-6 col-md-12">{<Sphere />}</div> */}
             </div>
           </div>
         </section>

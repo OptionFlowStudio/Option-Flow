@@ -1,0 +1,142 @@
+.homeSubtitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--pbmit-global-color);
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  padding: 6px 22px;
+  background-color: rgba(28, 108, 220, 0.2);
+  border-radius: 20px;
+}
+.homeTitle {
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0;
+  font-style: normal;
+  color: var(--pbmit-white-color);
+}
+
+.homeDescription {
+  color: #757c8c;
+}
+
+.webSection {
+  margin: 20px;
+  margin-top: 150px;
+}
+
+.subSection {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tileBlock {
+  width: 48%;
+  height: 170px;
+  margin: 10px;
+  background-color: var(--pbmit-blackish-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #354779;
+}
+
+.tileIconBlock {
+  padding: 30px;
+  margin: 20px;
+  background-color: var(--pbmit-secondary-color);
+  border-radius: 20px;
+}
+
+.tileBlock .tileIcon {
+  color: white;
+  font-size: 50px;
+}
+
+.tileTitle {
+  color: var(--pbmit-white-color);
+  font-size: 20px;
+}
+
+.tileDescr {
+  color: #757c8c;
+}
+
+/* Card Section */
+.cardBlock {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: var(--pbmit-blackish-color);
+  width: 30%;
+  height: 520px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  border: 1px solid #354779;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.cardImage {
+  max-width: 200px;
+  height: auto;
+}
+
+.cardTitle {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cardButton {
+  margin-top: 30px;
+}
+
+.cardDescr {
+  color: #757c8c;
+  text-align: center;
+}
+
+.sliderSection {
+  margin: 20px;
+  margin-top: 200px;
+}
+
+.backgroundVideo {
+  position: relative;
+  width: 100%;
+  height: 72vh;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .video {
+    display: none;
+  }
+}
