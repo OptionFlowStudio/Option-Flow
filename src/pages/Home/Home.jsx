@@ -101,6 +101,22 @@ const Home = () => {
   return (
     <div className="page-wrapper">
       <div className="page-content pbmit-bg-color-light">
+        <section className="banner-section-bg">
+          <div className="container">
+            <div className="pbmit-text-style-6">
+              <h2 className="pbmit-title">
+                Цифрова ідентичність - як головна мета
+              </h2>
+              <p>Cпільно творимо майбутнє: об'єднуємо іновації та творчість.</p>
+              <div>
+                <Link to="/contacts" className="pbmit-btn">
+                  Отримати консультацію
+                </Link>
+              </div>
+            </div>
+            {/* <div className="col-xl-6 col-md-12">{<Sphere />}</div> */}
+          </div>
+        </section>
         <div className="background-video">
           <video
             className="video"
@@ -111,29 +127,6 @@ const Home = () => {
             type="video/mp4"
           ></video>
         </div>
-        <section className="banner-section-bg">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-xl-6 col-md-12">
-                <div className="pbmit-text-style-6">
-                  <h2 className="pbmit-title">
-                    Цифрова ідентичність - як головна мета
-                  </h2>
-                  <p>
-                    Cпільно творимо майбутнє: об'єднуємо іновації та творчість.
-                  </p>
-                  <div>
-                    <Link to="/contacts" className="pbmit-btn">
-                      Отримати консультацію
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              {/* <div className="col-xl-6 col-md-12">{<Sphere />}</div> */}
-            </div>
-          </div>
-        </section>
-
         <section className="about-section-home6">
           <div className="container">
             <div className="row">

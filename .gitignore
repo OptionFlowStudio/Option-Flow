@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 src/animation/vid.mp4
+src/animation/BigAnimation.module.css
+src/pages/Home/Home.module.css
