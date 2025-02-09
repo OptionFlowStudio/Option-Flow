@@ -23,7 +23,7 @@ const Contacts = () => {
 
     const FormSended = async () => {
       try {
-        await axios.post("https://api.optionflow.pro/api/Main/Contact", data);
+        await axios.post("https://api.optionflow.tech/api/Main/Contact", data);
         localStorage.setItem(`formSended`, true);
       } catch (error) {
         console.log("We got Error", error);

@@ -15,8 +15,8 @@ const CareerSingle = () => {
   const [uploading, setUploading] = useState(false);
 
   const carrerDetailsLink =
-    "https://api.optionflow.pro/api/Main/CareerDetails/";
-  const careerLink = "https://api.optionflow.pro/api/Main/Career";
+    "https://api.optionflow.tech/api/Main/CareerDetails/";
+  const careerLink = "https://api.optionflow.tech/api/Main/Career";
 
   const fetchDetailsCallback = useCallback(() => {
     FetchDetailsModule(setCurrentCareer, carrerDetailsLink, id, navigate);
@@ -34,7 +34,7 @@ const CareerSingle = () => {
     setUploading(true);
     try {
       const dataResponse = await axios.post(
-        "https://api.optionflow.pro/api/Main/CareerDetailPost",
+        "https://api.optionflow.tech/api/Main/CareerDetailPost",
         {
           "Career.id": currentCareer.id,
           files: fileUpload,

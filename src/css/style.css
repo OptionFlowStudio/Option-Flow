@@ -1714,8 +1714,6 @@ textarea.form-control:focus {
 /* LOADER SECTION */
 
 .loader-container {
-  width: 100%;
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1723,68 +1721,30 @@ textarea.form-control:focus {
 }
 
 .loader {
-  --dim: 3rem;
-  width: var(--dim);
-  height: var(--dim);
-  position: relative;
-  animation: spin988 1.7s linear infinite;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
-.loader .circle {
-  --color: #333;
-  --dim: 1.2rem;
-  width: var(--dim);
-  height: var(--dim);
-  background-color: var(--pbmit-global-color);
-  border-radius: 30%;
-  position: absolute;
-}
-
-.loader .circle:nth-child(1) {
-  top: 0;
-  left: 0;
-}
-
-.loader .circle:nth-child(2) {
-  top: 0;
-  right: 0;
-}
-
-.loader .circle:nth-child(3) {
-  bottom: 0;
-  left: 0;
-}
-
-.loader .circle:nth-child(4) {
-  bottom: 0;
-  right: 0;
-}
-
-@keyframes spin988 {
+@keyframes spin {
   0% {
-    transform: scale(1) rotate(0);
+    transform: rotate(0deg);
+    box-shadow: 0 -1px 0 var(--pbmit-global-color);
   }
 
-  20%,
-  25% {
-    transform: scale(1.6) rotate(90deg);
-  }
-
-  45%,
   50% {
-    transform: scale(1) rotate(180deg);
+    transform: rotate(180deg);
+    box-shadow: 0 -1px 0 var(--pbmit-global-color);
   }
 
-  70%,
-  75% {
-    transform: scale(1.6) rotate(270deg);
-  }
-
-  95%,
   100% {
-    transform: scale(1) rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 -1px 0 var(--pbmit-global-color);
   }
 }
+
+/* Video Section */
 
 .background-video {
   /* position: relative; */
@@ -1797,4 +1757,8 @@ textarea.form-control:focus {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  /* image-rendering: pixelated; */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
 }

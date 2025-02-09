@@ -8,7 +8,7 @@ import Loader from "../../animation/Loader.jsx";
 import webImg from "../../Images/internet/web-service.png";
 import smmImg from "../../Images/internet/smm-service.png";
 import itImg from "../../Images/internet/it-service.png";
-import video from "../../animation/ooo.mp4";
+import video from "../../animation/hero.webm";
 
 const Home = () => {
   const [cardData] = useState([
@@ -82,7 +82,7 @@ const Home = () => {
     const getData = async () => {
       try {
         const dataResponse = await axios.get(
-          "https://api.optionflow.pro/api/Main/Index"
+          "https://api.optionflow.tech/api/Main/Index"
         );
         setServicesData(dataResponse.data.allServices);
         setBlogData(dataResponse.data.blogs);
@@ -124,7 +124,8 @@ const Home = () => {
             autoPlay
             muted
             loop
-            type="video/mp4"
+            preload="auto"
+            type="video/webm"
           ></video>
         </div>
         <section className="about-section-home6">

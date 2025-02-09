@@ -7,7 +7,7 @@ import FetchModule from "../../components/module/FetchModule";
 const Career = () => {
   const [careerData, setCareerData] = useState(null);
   const { careerNewData, setFetchedCareerData } = useContext(DataContext);
-  let careerLink = "https://api.optionflow.pro/api/Main/Career";
+  let careerLink = "https://api.optionflow.tech/api/Main/Career";
 
   const notEmptyData = careerData || careerNewData;
 

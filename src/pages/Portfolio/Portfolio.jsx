@@ -8,7 +8,7 @@ const Portfolio = () => {
   const [portfolioData, setPortfolioData] = useState(null);
   const { portfolioNewData, setFetchedPortfolioData } = useContext(DataContext);
 
-  const portfolioLink = "https://api.optionflow.pro/api/Main/Portfolio";
+  const portfolioLink = "https://api.optionflow.tech/api/Main/Portfolio";
 
   const notEmptyData = portfolioData || portfolioNewData;
 

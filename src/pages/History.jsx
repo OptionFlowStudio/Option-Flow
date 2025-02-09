@@ -10,7 +10,7 @@ const History = () => {
     const fetchData = async () => {
       try {
         const dataResponse = await axios.get(
-          "https://api.optionflow.pro/api/Main/OurHistory"
+          "https://api.optionflow.tech/api/Main/OurHistory"
         );
         setHistoryData(dataResponse.data);
         setFetchedHistoryData(dataResponse.data);

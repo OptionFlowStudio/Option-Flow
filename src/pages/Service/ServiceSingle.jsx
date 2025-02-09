@@ -22,8 +22,8 @@ const ServiceSingle = () => {
   const [currentService, setCurrentService] = useState(null);
 
   const serviceDetailsLink =
-    "https://api.optionflow.pro/api/Main/ServiceDetails/";
-  const serviceLink = "https://api.optionflow.pro/api/Main/Services";
+    "https://api.optionflow.tech/api/Main/ServiceDetails/";
+  const serviceLink = "https://api.optionflow.tech/api/Main/Services";
 
   const fetchDetailsCallback = useCallback(() => {
     FetchDetailsModule(setCurrentService, serviceDetailsLink, id, navigate);
@@ -98,7 +98,7 @@ const ServiceSingle = () => {
                             <div className="pbmit-download">
                               <div className="pbmit-item-download">
                                 <Link
-                                  to="https://api.optionflow.pro/docs/OptionFlow.pdf"
+                                  to="https://api.optionflow.tech/docs/OptionFlow.pdf"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
@@ -134,7 +134,7 @@ const ServiceSingle = () => {
                   </div>
                   <div className="col-lg-8 service-right-col order-1">
                     <img
-                      src={`https://api.optionflow.pro/${currentService.service.serviceImage}`}
+                      src={`https://api.optionflow.tech/${currentService.service.serviceImage}`}
                       className="w-100"
                       alt="Service Poster"
                       onLoad={handleLoader}

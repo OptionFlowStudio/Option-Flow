@@ -11,7 +11,7 @@ const About = () => {
   const getData = useCallback(async () => {
     try {
       const blogResponse = await axios.get(
-        "https://api.optionflow.pro/api/Main/Blog"
+        "https://api.optionflow.tech/api/Main/Blog"
       );
       setBlogData(blogResponse.data.slice(0, 3));
       setFetchedBlogData(blogResponse.data);

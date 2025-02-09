@@ -7,7 +7,7 @@ const Faq = () => {
   const [faqData, setFaqData] = useState(null);
   const [openIndex, setOpenIndex] = useState(null);
 
-  const faqLink = "https://api.optionflow.pro/api/Main/FAQ";
+  const faqLink = "https://api.optionflow.tech/api/Main/FAQ";
 
   useEffect(() => {
     FetchModule(setFaqData, undefined, faqLink);

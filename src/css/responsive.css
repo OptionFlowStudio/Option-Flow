@@ -2089,3 +2089,11 @@ body {
     margin-left: -4%;
   }
 }
+
+/* Video responsive-section  */
+
+@media (max-width: 1250px) {
+  .video {
+    display: none;
+  }
+}

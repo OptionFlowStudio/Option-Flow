@@ -19,7 +19,7 @@ const PortfolioBlock = ({ portfolioObject }) => {
             <div className="pbmit-featured-img-wrapper">
               <div className="pbmit-featured-wrapper">
                 <img
-                  src={`https://api.optionflow.pro/${portfolioObject.portfolioImageLow}`}
+                  src={`https://api.optionflow.tech/${portfolioObject.portfolioImageLow}`}
                   className="img-fluid w-100"
                   alt=""
                 />

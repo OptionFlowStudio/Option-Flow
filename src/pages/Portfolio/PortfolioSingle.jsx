@@ -12,8 +12,8 @@ const PortfolioSingle = () => {
   const [currentPortfolio, setCurrentPortfolio] = useState(null);
 
   const portfolioDetailsLink =
-    "https://api.optionflow.pro/api/Main/PortfolioDetails/";
-  const portfolioLink = "https://api.optionflow.pro/api/Main/Portfolio";
+    "https://api.optionflow.tech/api/Main/PortfolioDetails/";
+  const portfolioLink = "https://api.optionflow.tech/api/Main/Portfolio";
 
   const fetchDetailsCallback = useCallback(() => {
     FetchDetailsModule(setCurrentPortfolio, portfolioDetailsLink, id, navigate);
@@ -123,7 +123,7 @@ const PortfolioSingle = () => {
                                 rel="noreferrer"
                               >
                                 <img
-                                  src={`https://api.optionflow.pro/${currentPortfolio.portfolioImage}`}
+                                  src={`https://api.optionflow.tech/${currentPortfolio.portfolioImage}`}
                                   width="1600"
                                   height="1000"
                                   alt="Screen"

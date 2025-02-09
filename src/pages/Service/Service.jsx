@@ -8,7 +8,7 @@ const Service = () => {
   const [serviceData, setServiceData] = useState(null);
   const { serviceNewData, setFetchedServiceData } = useContext(DataContext);
 
-  const serviceLink = "https://api.optionflow.pro/api/Main/Services";
+  const serviceLink = "https://api.optionflow.tech/api/Main/Services";
 
   const notEmptyData = serviceData || serviceNewData;
 

@@ -18,7 +18,7 @@ const BlogContetBox = ({ blogObject }) => {
             <div className="pbmit-featured-img-wrapper">
               <div className="pbmit-featured-wrapper">
                 <img
-                  src={`https://api.optionflow.pro/${blogObject.blogImageLow}`}
+                  src={`https://api.optionflow.tech/${blogObject.blogImageLow}`}
                   className="img-fluid w-100"
                   alt=""
                 />
