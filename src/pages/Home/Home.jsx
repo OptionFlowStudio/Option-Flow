@@ -8,7 +8,7 @@ import Loader from "../../animation/Loader.jsx";
 import webImg from "../../Images/internet/web-service.png";
 import smmImg from "../../Images/internet/smm-service.png";
 import itImg from "../../Images/internet/it-service.png";
-import video from "../../animation/hero.webm";
+// import video from "../../animation/hero.webm";
 
 const Home = () => {
   const [cardData] = useState([
@@ -118,7 +118,7 @@ const Home = () => {
           </div>
         </section>
         <div className="background-video">
-          <video
+          {/* <video
             className="video"
             src={video}
             autoPlay
@@ -126,7 +126,7 @@ const Home = () => {
             loop
             preload="auto"
             type="video/webm"
-          ></video>
+          ></video> */}
         </div>
         <section className="about-section-home6">
           <div className="container">
