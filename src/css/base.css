@@ -509,6 +509,7 @@ body .pbmit-bg-color-white {
   padding-bottom: 130px;
 }
 .section-lg {
+  min-height: 63vh;
   background-color: var(--pbmit-secondary-color);
   padding-top: 100px;
   padding-bottom: 100px;
