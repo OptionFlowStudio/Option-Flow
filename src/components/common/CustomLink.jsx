@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { DataContext } from "../../Context/DataContext";
 
 const CustomLink = ({ propsHref, propsText, children, className }) => {
