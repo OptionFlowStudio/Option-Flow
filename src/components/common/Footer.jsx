@@ -14,7 +14,7 @@ const Footer = () => {
                 Не соромтесь звертатися до нас
                 <br />З нетерпінням чекаємо можливості спілкування з вами!
               </h3>
-              <Link to="mailto:info@optionflow.pro">info@optionflow.pro</Link>
+              <Link to="mailto:info@optionflow.tech">info@optionflow.tech</Link>
             </div>
             <div className="col-md-3 col-sm-12">
               <div className="pbmit-footer-logo">
@@ -55,8 +55,8 @@ const Footer = () => {
                   <div className="pbmit-footer-contact-info">
                     <div className="pbmit-content-box">Центр кліентів</div>
                     <div className="pbmit-contact-box">
-                      <Link to="mailto:info@optionflow.pro">
-                        info@optionflow.pro
+                      <Link to="mailto:info@optionflow.tech">
+                        info@optionflow.tech
                       </Link>
                     </div>
                   </div>

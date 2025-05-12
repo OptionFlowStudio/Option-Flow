@@ -113,7 +113,7 @@ const About = () => {
                 <div className="pbmit-ihbox pbmit-ihbox-style-20 mt-5">
                   <div className="pbmit-ihbox-box d-flex align-items-center">
                     <Link
-                      to="mailto:info@optionflow.pro"
+                      to="mailto:info@optionflow.tech"
                       className="about-us-email-widget"
                     >
                       <div className="pbmit-ihbox-icon">
@@ -128,7 +128,7 @@ const About = () => {
                           Відправити пошту
                         </div>
                         <h2 className="pbmit-element-title">
-                          info@optionflow.pro
+                          info@optionflow.tech
                         </h2>
                       </div>
                     </Link>

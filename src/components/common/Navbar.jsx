@@ -68,8 +68,8 @@ const Navbar = () => {
                       </li>
                       <li>
                         <i className="pbmit-base-icon-mail-alt"></i>
-                        <Link to="mailto:info@optionflow.pro">
-                          Пошта: <span>info@optionflow.pro</span>
+                        <Link to="mailto:info@optionflow.tech">
+                          Пошта: <span>info@optionflow.tech</span>
                         </Link>
                       </li>
                     </ul>
@@ -122,7 +122,7 @@ const Navbar = () => {
                             className={
                               headerSticky ? "sticky-logo" : "logo-img"
                             }
-                            alt="coworking"
+                            alt="OptionFlow logo"
                             src={logoWhite}
                           />
                         </Link>
